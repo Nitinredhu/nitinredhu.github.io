@@ -4,7 +4,7 @@
 
 Built with pure HTML & CSS. No frameworks, no fluff.
 
-**Live site →** [nitinredhu.github.io]
+**Live site →** nitinredhu.github.io
 
 ---
 
