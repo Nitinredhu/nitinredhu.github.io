@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
     <title>About Nitish | The Real Story</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +40,7 @@
         /* ======== SCROLL SEQUENCE ======== */
         /* Height badha di 400vh kyunki ab 4 words hain */
         #scroll-sequence { position:relative; height:400vh; }
+        
         #sequence-sticky { position:sticky; top:0; height:100vh; width:100%; overflow:hidden; display:flex; align-items:center; justify-content:center; }
         #word-stage { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
 
@@ -178,6 +180,88 @@
             .fh-badge { align-self:center; }
             .profile-card { width:220px; }
         }
+        /* Mobile specific fixes for About Page */
+@media (max-width: 768px) {
+    /* Animation container ki height aur overflow fix */
+    #scroll-sequence { 
+        height: 180vh !important; /* Height thodi kam ki taki scroll lamba na khiche */
+    }
+
+    /* Words ko stack hone se rokne ke liye size aur positioning */
+    .scroll-word {
+        font-size: 15vw !important; /* Text thoda chota taki screen se bahar na jaye */
+        width: 100% !important;
+        left: 0 !important;
+        text-align: center;
+    }
+
+    /* Main content frame ki spacing */
+    #main-content {
+        padding: 1rem !important;
+    }
+
+    .window-frame {
+        width: 100% !important;
+        border-radius: 8px;
+    }
+
+    .page-content {
+        padding: 2rem 1.2rem !important;
+    }
+
+    /* Hero section (Nitish Photo + Text) */
+    .final-hero-inner {
+        flex-direction: column-reverse !important; /* Photo upar, text niche */
+        gap: 2rem !important;
+    }
+
+    .fh-title {
+        font-size: 2.8rem !important;
+        text-align: center;
+    }
+
+    .fh-subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .fh-badge {
+        margin: 0 auto;
+    }
+
+    .fh-meta {
+        align-items: center;
+    }
+
+    /* Skills pills ko stack karne ke liye */
+    .node-pills {
+        gap: 0.5rem !important;
+    }
+
+    .npill {
+        font-size: 0.7rem !important;
+        padding: 0.5rem 1rem !important;
+    }
+    /* Title ko screen ke andar lane ke liye */
+    .sec-head {
+        margin-left: 1.5rem !important; /* Left margin badha diya */
+        padding-left: 0.5rem !important;
+        font-size: 0.75rem !important; /* Mobile ke liye thoda chota */
+    }
+
+    /* Dot ko sahi jagah set karne ke liye */
+    .sec-head::before {
+        left: -1.2rem !important; /* Dot ko text ke paas kiya */
+        top: 6px !important;
+        width: 6px !important;
+        height: 6px !important;
+    }
+
+    /* Page padding adjust karein taaki content chipke na */
+    .page-content {
+        padding: 2rem 1.5rem !important;
+    }
+}
     </style>
 </head>
 <body>
@@ -375,7 +459,8 @@ function updateSeq() {
 
     hint.classList.toggle('hidden', scrolled > 40);
 
-    // Ab stage ko 4 se multiply kiya hai kyunki 4 steps hain
+    // Mobile par animation ko thoda aur room dene ke liye logic
+    const isMobile = window.innerWidth <= 768;
     const stage = p * 4;
 
     words.forEach((w, i) => {
@@ -384,8 +469,10 @@ function updateSeq() {
         if (dist > -1 && dist < 1) {
             w.style.display = 'block';
             w.style.opacity = 1 - Math.abs(dist);
-            w.style.transform = `scale(${1.0 - (dist * 0.4)})`;
-            w.style.filter = `blur(${Math.abs(dist) * 15}px)`;
+            // Mobile par scale thoda kam rakhein taki glitch na dikhe
+            const scaleVal = isMobile ? 0.9 : 1.0; 
+            w.style.transform = `scale(${scaleVal - (dist * 0.3)})`;
+            w.style.filter = `blur(${Math.abs(dist) * (isMobile ? 5 : 15)}px)`;
         } else {
             w.style.display = 'none';
         }
