@@ -459,8 +459,7 @@ function updateSeq() {
 
     hint.classList.toggle('hidden', scrolled > 40);
 
-    // Mobile par animation ko thoda aur room dene ke liye logic
-    const isMobile = window.innerWidth <= 768;
+    // Ab stage ko 4 se multiply kiya hai kyunki 4 steps hain
     const stage = p * 4;
 
     words.forEach((w, i) => {
@@ -469,10 +468,8 @@ function updateSeq() {
         if (dist > -1 && dist < 1) {
             w.style.display = 'block';
             w.style.opacity = 1 - Math.abs(dist);
-            // Mobile par scale thoda kam rakhein taki glitch na dikhe
-            const scaleVal = isMobile ? 0.9 : 1.0; 
-            w.style.transform = `scale(${scaleVal - (dist * 0.3)})`;
-            w.style.filter = `blur(${Math.abs(dist) * (isMobile ? 5 : 15)}px)`;
+            w.style.transform = `scale(${1.0 - (dist * 0.4)})`;
+            w.style.filter = `blur(${Math.abs(dist) * 15}px)`;
         } else {
             w.style.display = 'none';
         }
