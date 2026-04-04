@@ -20,7 +20,7 @@ Built with pure HTML & CSS. No frameworks, no fluff.
 | Telco Churn Analysis | SQL, Power BI | ₹42K/yr recovery projected |
 | E-Commerce Revenue | PostgreSQL | 95K+ orders analyzed |
 | Bellabeat Strategy | R, ggplot2 | 3 executive interventions |
-| Student Productivity | Python, Excel | 12% score increase projected |
+| Student Productivity | SQL, Excel | 12% score increase projected |
 
 ---
 
