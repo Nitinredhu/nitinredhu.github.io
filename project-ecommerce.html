@@ -264,7 +264,7 @@
       <div class="s-label">02 / The Numbers</div>
       <div class="kpi-strip">
         <div><div class="kpi-v">95,000</div><div class="kpi-l">Orders Analyzed</div></div>
-        <div><div class="kpi-v">₹13.6M</div><div class="kpi-l">Total Revenue</div></div>
+        <div><div class="kpi-v">$13.6M</div><div class="kpi-l">Total Revenue</div></div>
         <div><div class="kpi-v">68%</div><div class="kpi-l">Top 3 Category Share</div></div>
         <div><div class="kpi-v">22%</div><div class="kpi-l">Efficiency Gain Potential</div></div>
       </div>
@@ -273,7 +273,7 @@
     <div class="s-block reveal">
       <div class="s-label">03 / The Problem</div>
       <div class="text-content">
-        <p>The business was generating significant revenue (<strong>₹13.63M</strong>) but allocating marketing and inventory budgets blindly across dozens of product categories. Without visibility into which specific items were actually driving the volume, capital was being tied up in dead stock while high-velocity items risked stocking out.</p>
+        <p>The business was generating significant revenue (<strong>$13.63M</strong>) but allocating marketing and inventory budgets blindly across dozens of product categories. Without visibility into which specific items were actually driving the volume, capital was being tied up in dead stock while high-velocity items risked stocking out.</p>
       </div>
     </div>
 
@@ -299,9 +299,9 @@
       </div>
 
       <div class="kpi-demo">
-        <div class="kd"><div class="kd-l">Total Revenue</div><div class="kd-v" id="kpiRev">₹13.63M</div><div class="kd-s" id="kpiRevSub">↑ 34% YoY</div></div>
+        <div class="kd"><div class="kd-l">Total Revenue</div><div class="kd-v" id="kpiRev">$13.63M</div><div class="kd-s" id="kpiRevSub">↑ 34% YoY</div></div>
         <div class="kd"><div class="kd-l">Total Orders</div><div class="kd-v" id="kpiOrd">95,000</div><div class="kd-s" id="kpiOrdSub">↑ 28% YoY</div></div>
-        <div class="kd"><div class="kd-l">Avg Order Value</div><div class="kd-v" id="kpiAov">₹143.26</div><div class="kd-s" id="kpiAovSub">↑ 5% Change</div></div>
+        <div class="kd"><div class="kd-l">Avg Order Value</div><div class="kd-v" id="kpiAov">$143.26</div><div class="kd-s" id="kpiAovSub">↑ 5% Change</div></div>
       </div>
 
       <div class="charts-row">
@@ -325,7 +325,7 @@
         </div>
         <div class="insight-card">
           <div class="insight-num">Insight 02 — A Maturing Market</div>
-          <div class="insight-text">Revenue hit a peak of ~₹1M/month in early 2018 and then stabilized. This flat post-peak trend indicates a maturing market, requiring a shift from growth-hacking to operational efficiency.</div>
+          <div class="insight-text">Revenue hit a peak of ~$1M/month in early 2018 and then stabilized. This flat post-peak trend indicates a maturing market, requiring a shift from growth-hacking to operational efficiency.</div>
         </div>
         <div class="insight-card">
           <div class="insight-num">Insight 03 — Logistics are Solid</div>
@@ -392,9 +392,9 @@
 
   // 4. Interactive Dashboard Logic
   const DB = {
-    all:  { rev:[0.05,0.28,0.36,0.48,0.95,0.82,1.02,0.78], months:['Oct 16','Jan 17','Apr 17','Jul 17','Oct 17','Jan 18','Apr 18','Jul 18'], kpi:{rev:'₹13.63M',ord:'95,000',aov:'₹143.26',rs:'↑ 34% YoY',os:'↑ 28% YoY',as:'↑ 5% Change'} },
-    2017: { rev:[0.28,0.36,0.48,0.95], months:['Jan 17','Apr 17','Jul 17','Oct 17'], kpi:{rev:'₹5.2M',ord:'41K',aov:'₹127.10',rs:'2017 Only',os:'2017 Only',as:'Base Year'} },
-    2018: { rev:[0.82,1.02,0.78], months:['Jan 18','Apr 18','Jul 18'], kpi:{rev:'₹8.1M',ord:'54K',aov:'₹150.45',rs:'↑ 56% vs 2017',os:'↑ 32% vs 2017',as:'↑ 18% vs 2017'} }
+    all:  { rev:[0.05,0.28,0.36,0.48,0.95,0.82,1.02,0.78], months:['Oct 16','Jan 17','Apr 17','Jul 17','Oct 17','Jan 18','Apr 18','Jul 18'], kpi:{rev:'$13.63M',ord:'95,000',aov:'$143.26',rs:'↑ 34% YoY',os:'↑ 28% YoY',as:'↑ 5% Change'} },
+    2017: { rev:[0.28,0.36,0.48,0.95], months:['Jan 17','Apr 17','Jul 17','Oct 17'], kpi:{rev:'$5.2M',ord:'41K',aov:'$127.10',rs:'2017 Only',os:'2017 Only',as:'Base Year'} },
+    2018: { rev:[0.82,1.02,0.78], months:['Jan 18','Apr 18','Jul 18'], kpi:{rev:'$8.1M',ord:'54K',aov:'$150.45',rs:'↑ 56% vs 2017',os:'↑ 32% vs 2017',as:'↑ 18% vs 2017'} }
   };
   const CATS = { names:['Home/Bath','Beauty','Sports','Furniture','Electronics','Utilities'], orders:[11.5, 9.8, 8.5, 8.2, 7.8, 6.8] };
   let lChart, bChart, curF = 'all';
@@ -414,7 +414,7 @@
     if (bChart) bChart.destroy();
 
     lChart = new ApexCharts(document.getElementById('lineChart'), {
-      series: [{ name:'Revenue (₹M)', data:d.rev }],
+      series: [{ name:'Revenue ($M)', data:d.rev }],
       chart: { type:'area', height:240, toolbar:{show:false}, background:'transparent', fontFamily:mono, animations:{enabled:true, easing:'easeinout', speed:700} },
       theme: { mode: chartMode },
       colors:[tc], fill:{type:'solid', opacity:0.07}, stroke:{curve:'straight', width:2}, dataLabels:{enabled:false},
