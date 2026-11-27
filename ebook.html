@@ -1763,7 +1763,6 @@
   <script>
     'use strict';
 
-    // Replace with your Live Razorpay Key ID (starts with rzp_live_...)
     const RAZORPAY_KEY_ID = "rzp_live_U5BYEFkeJxuNDb";
     const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxOKuDYOoPpUSu8rcednl_nBhksrNCcMpBxTuW2LsqBUl3NpN7o_gLsZpJgvjycd8sIYg/exec";
     const SUPPORT_EMAIL = "nitishredhu94@gmail.com";
@@ -1883,7 +1882,6 @@
       } catch (_) {}
     });
 
-
     // ================= FAQ ACCORDION =================
     document.querySelectorAll(".faq-btn").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -1978,8 +1976,8 @@
       }
     });
 
-    // ================= REAL-LIFE WORKING RAZORPAY CHECKOUT =================
-    document.getElementById("checkoutForm").addEventListener("submit", e => {
+    // ================= LIVE RAZORPAY CHECKOUT WITH ORDER & SIGNATURE =================
+    document.getElementById("checkoutForm").addEventListener("submit", async e => {
       e.preventDefault();
       const name = document.getElementById("buyerName").value.trim();
       const email = document.getElementById("buyerEmail").value.trim().toLowerCase();
@@ -2018,90 +2016,133 @@
 
       const submitBtn = document.getElementById("submitOrderBtn");
       submitBtn.disabled = true;
-      submitBtn.textContent = "Opening Razorpay...";
+      submitBtn.textContent = "Creating Secure Order...";
 
-      const options = {
-        key: RAZORPAY_KEY_ID,
-        amount: BUNDLE_PRICE_INR * 100,
-        currency: "INR",
-        name: "Nitish Redhu",
-        description: "Work on Autopilot — 2026 3-File Bundle",
-        image: "logo.jpg",
-        prefill: {
-          name: name,
-          email: email,
-          contact: "+91" + phone
-        },
-        notes: {
-          product: "Work on Autopilot (3-File Bundle)",
-          buyer_email: email
-        },
-        theme: {
-          color: "#1D4ED8"
-        },
-        modal: {
-          ondismiss: function () {
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Proceed to Pay ₹199 →";
-          }
-        },
-        handler: async function (response) {
-          submitBtn.textContent = "Verifying Payment & Unlocking Bundle...";
+      try {
+        // Step 1: Create official Razorpay Order via Google Apps Script
+        const orderRes = await fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          body: JSON.stringify({
+            action: "create_order",
+            amount: BUNDLE_PRICE_INR * 100
+          })
+        });
 
-          const now = new Date();
-          const randNum = Math.floor(1000 + Math.random() * 9000);
-          const year = now.getFullYear();
-          const dateStr = now.toISOString().slice(0, 10);
-          const timeStr = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: true });
-          const deviceType = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
+        const orderData = await orderRes.json();
+        if (!orderData || !orderData.ok || !orderData.order_id) {
+          throw new Error((orderData && orderData.error) || "Could not initialize Razorpay order.");
+        }
 
-          const orderPayload = {
-            action: "verify_and_fulfill",
-            orderId: `ORD-${year}-${randNum}`,
-            invoiceNo: response.razorpay_payment_id,
-            razorpayPaymentId: response.razorpay_payment_id,
-            date: dateStr,
-            time: timeStr,
+        submitBtn.textContent = "Opening Razorpay...";
+
+        // Step 2: Open Razorpay Checkout with server-generated order_id
+        const options = {
+          key: RAZORPAY_KEY_ID,
+          amount: orderData.amount,
+          currency: orderData.currency || "INR",
+          name: "Nitish Redhu",
+          description: "Work on Autopilot — 2026 3-File Bundle",
+          image: "logo.jpg",
+          order_id: orderData.order_id,
+          prefill: {
             name: name,
             email: email,
-            phone: phone,
-            amount: BUNDLE_PRICE_INR,
-            method: "Razorpay",
-            status: "Paid (Verified)",
-            device: deviceType
-          };
+            contact: "+91" + phone
+          },
+          notes: {
+            product: "Work on Autopilot (3-File Bundle)",
+            buyer_email: email
+          },
+          theme: {
+            color: "#1D4ED8"
+          },
+          modal: {
+            ondismiss: function () {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Proceed to Pay ₹199 →";
+            }
+          },
+          handler: async function (response) {
+            submitBtn.textContent = "Verifying Signature & Unlocking Bundle...";
 
-          try {
-            await fetch(APPS_SCRIPT_URL, {
-              method: "POST",
-              mode: "no-cors",
-              headers: { "Content-Type": "text/plain;charset=utf-8" },
-              body: JSON.stringify(orderPayload)
-            });
-          } catch (_) {}
+            const now = new Date();
+            const randNum = Math.floor(1000 + Math.random() * 9000);
+            const year = now.getFullYear();
+            const dateStr = now.toISOString().slice(0, 10);
+            const timeStr = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", hour12: true });
+            const deviceType = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? "Mobile" : "Desktop";
+            const invoiceCode = `INV-${year}-${randNum}`;
 
-          lastReceiptData = orderPayload;
-          document.getElementById("receiptEmailDisplay").textContent = email;
-          document.getElementById("recOrderId").textContent = orderPayload.orderId;
-          document.getElementById("recPaymentId").textContent = orderPayload.razorpayPaymentId;
-          document.getElementById("recDateTime").textContent = `${orderPayload.date} • ${orderPayload.time}`;
-          document.getElementById("recCustomer").textContent = orderPayload.name;
+            const verifyPayload = {
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              invoiceNo: invoiceCode,
+              date: dateStr,
+              time: timeStr,
+              name: name,
+              email: email,
+              phone: phone,
+              amount: BUNDLE_PRICE_INR,
+              method: "Razorpay Online",
+              status: "Captured",
+              device: deviceType
+            };
 
+            try {
+              const verifyRes = await fetch(APPS_SCRIPT_URL, {
+                method: "POST",
+                body: JSON.stringify(verifyPayload)
+              });
+              const verifyData = await verifyRes.json();
+
+              if (!verifyData || !verifyData.ok) {
+                throw new Error((verifyData && verifyData.error) || "Payment signature verification failed.");
+              }
+
+              lastReceiptData = {
+                orderId: response.razorpay_order_id,
+                razorpayPaymentId: response.razorpay_payment_id,
+                invoiceNo: invoiceCode,
+                date: dateStr,
+                time: timeStr,
+                name: name,
+                email: email
+              };
+
+              document.getElementById("receiptEmailDisplay").textContent = email;
+              document.getElementById("recOrderId").textContent = response.razorpay_order_id;
+              document.getElementById("recPaymentId").textContent = response.razorpay_payment_id;
+              document.getElementById("recDateTime").textContent = `${dateStr} • ${timeStr}`;
+              document.getElementById("recCustomer").textContent = name;
+
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Proceed to Pay ₹199 →";
+              document.getElementById("checkoutFormView").style.display = "none";
+              document.getElementById("checkoutSuccessView").style.display = "block";
+            } catch (verifyErr) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Proceed to Pay ₹199 →";
+              alertBox.innerHTML = `Payment captured (ID: <strong>${escapeHtml(response.razorpay_payment_id)}</strong>), but automatic delivery hit an issue: ${escapeHtml(verifyErr.message)}. Please email <strong>${SUPPORT_EMAIL}</strong> with your Payment ID for instant manual unlock.`;
+              alertBox.style.display = "block";
+            }
+          }
+        };
+
+        const rzp = new window.Razorpay(options);
+        rzp.on("payment.failed", function (failResp) {
           submitBtn.disabled = false;
           submitBtn.textContent = "Proceed to Pay ₹199 →";
-          document.getElementById("checkoutFormView").style.display = "none";
-          document.getElementById("checkoutSuccessView").style.display = "block";
-        }
-      };
-
-      const rzp = new window.Razorpay(options);
-      rzp.on("payment.failed", function (failResp) {
+          alertBox.textContent = "Payment failed: " + (failResp.error && failResp.error.description ? failResp.error.description : "Please try again.");
+          alertBox.style.display = "block";
+        });
+        rzp.open();
+      } catch (err) {
         submitBtn.disabled = false;
         submitBtn.textContent = "Proceed to Pay ₹199 →";
-        alertBox.textContent = "Payment failed: " + (failResp.error && failResp.error.description ? failResp.error.description : "Please try again.");
+        alertBox.textContent = "Checkout Error: " + err.message;
         alertBox.style.display = "block";
-      });
-      rzp.open();
+      }
     });
 
     // ================= PDF RECEIPT GENERATOR =================
@@ -2129,8 +2170,9 @@
       doc.setFontSize(11);
       let y = 54;
       const rows = [
-        ["Order ID:", lastReceiptData.orderId],
+        ["Razorpay Order ID:", lastReceiptData.orderId],
         ["Razorpay Payment ID:", lastReceiptData.razorpayPaymentId],
+        ["Invoice No:", lastReceiptData.invoiceNo],
         ["Date & Time:", `${lastReceiptData.date} (${lastReceiptData.time})`],
         ["Customer Name:", lastReceiptData.name],
         ["Customer Email:", lastReceiptData.email],
@@ -2151,7 +2193,7 @@
       doc.setFontSize(9.5);
       doc.setTextColor(100, 100, 100);
       doc.text(`Support: ${SUPPORT_EMAIL} | nitinredhu.github.io/ebook.html`, 18, y + 14);
-      doc.save(`${lastReceiptData.orderId}_Receipt.pdf`);
+      doc.save(`${lastReceiptData.razorpayPaymentId}_Receipt.pdf`);
     });
 
     // ================= SERVER-SIDE PIN OWNER SALES LEDGER =================
