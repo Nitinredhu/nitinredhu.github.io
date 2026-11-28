@@ -4,8 +4,83 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/jpeg" href="logo.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work on Autopilot — 2026 Digital Bundle | Nitish Redhu</title>
-  <meta name="description" content="Copy-Paste AI Systems for Emails, Spreadsheets & Daily Tasks. Get the 2026 PDF Playbook, 20-Prompt TXT Library, and Excel Time-Saved Tracker." />
+
+  <!-- ========== [UPDATED] SINGLE CLEAN SEO TITLE, META TAGS & CANONICAL (DUPLICATE REMOVED) ========== -->
+  <title>Work on Autopilot: 20 Copy-Paste AI Prompts for Excel, Emails & Daily Work (2026) | Nitish Redhu</title>
+  <meta name="description" content="Stop rewriting robotic AI drafts. Get 20 copy-paste ChatGPT, Gemini & Claude prompt systems for inbox triage, Excel formulas (#N/A fix), meeting transcripts, PDF briefs & SOPs + Excel ROI Tracker at ₹199 (60% OFF)." />
+  <meta name="keywords" content="copy paste ai prompts, chatgpt prompts for excel, ai prompts for email replies, fix #n/a error in excel ai, office automation prompts pdf, chatgpt prompt playbook india, productivity bundle" />
+  <link rel="canonical" href="https://nitinredhu.github.io/ebook.html" />
+
+  <!-- Open Graph / Social Share Preview -->
+  <meta property="og:title" content="Work on Autopilot — 20 Copy-Paste AI Systems for Office Work (₹199)" />
+  <meta property="og:description" content="Reclaim 12–15 hours/week with 20 battle-tested prompts for Emails, Excel, Meetings & PDFs + Automated Excel Time-Saved Tracker." />
+  <meta property="og:url" content="https://nitinredhu.github.io/ebook.html" />
+  <meta property="og:type" content="product" />
+
+  <!-- ========== [NEW] PRODUCT + FAQ RICH SNIPPET SCHEMA FOR GOOGLE TOP RANKING ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "Work on Autopilot: Copy-Paste AI Systems for Emails, Spreadsheets & Daily Tasks (2026 Edition)",
+        "image": "https://nitinredhu.github.io/front-page.jpeg",
+        "description": "23-page practical AI playbook with 20 copy-paste prompt templates for ChatGPT, Claude, Gemini, and Copilot, plus a plain-text Prompt Vault (.TXT) and automated Excel Time-Saved ROI Tracker (.XLSX).",
+        "brand": {
+          "@type": "Brand",
+          "name": "Nitish Redhu"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://nitinredhu.github.io/ebook.html",
+          "priceCurrency": "INR",
+          "price": "199.00",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How fast do I get the files after payment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Immediately. As soon as your ₹199 payment is confirmed by Razorpay, your email is automatically authorized on our private Google Drive bundle and your receipt email is sent within seconds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do these AI prompts work with free ChatGPT or Gemini accounts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every prompt in the 20-Prompt Library is tested on free tiers of ChatGPT, Gemini, Claude, and Copilot without needing paid APIs or coding skills."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can these prompts fix broken Excel formulas like #N/A and #VALUE!?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Chapter 03 includes dedicated copy-paste prompts to generate XLOOKUP/INDEX-MATCH formulas in plain English, debug #N/A or #VALUE! errors, and clean messy CSV exports."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ₹199 a one-time payment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, ₹199 (60% off the ₹499 regular price) is a single one-time payment with lifetime access to the 2026 Edition PDF, TXT Prompt Library, and Excel Tracker."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -29,6 +104,8 @@
       --accent-blue: #1D4ED8;
       --accent-blue-hover: #1E40AF;
       --live-green: #22c55e;
+      --sale-green-bg: rgba(34, 197, 94, 0.14);
+      --sale-green-text: #15803d;
       --ff-head: 'Bricolage Grotesque', sans-serif;
       --ff-body: 'Inter', sans-serif;
       --ff-mono: 'JetBrains Mono', monospace;
@@ -44,25 +121,19 @@
       --border: #444444;
       --border-dim: #2a2a2a;
       --highlight: rgba(244, 244, 240, 0.08);
+      --sale-green-bg: rgba(34, 197, 94, 0.18);
+      --sale-green-text: #4ade80;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      font-size: 16px;
-      overflow-x: hidden;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 
     body {
       font-family: var(--ff-body);
       background: var(--bg-page);
       color: var(--text-main);
       padding: 2rem;
+      padding-bottom: 5.5rem; /* Space for sticky conversion bar */
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -72,7 +143,6 @@
       overflow-x: hidden;
     }
 
-    /* Signature Grain Overlay matching index.html */
     body::before {
       content: "";
       position: fixed;
@@ -93,1146 +163,517 @@
       font-family: inherit;
     }
 
-    input, select {
-      font-family: inherit;
-    }
+    input, select { font-family: inherit; }
 
     /* Custom Cursor */
     .c-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--text-main);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 100000;
-      transform: translate(-50%, -50%);
-      transition: background 0.3s;
-      will-change: transform;
+      width: 6px; height: 6px; background: var(--text-main); border-radius: 50%;
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 100000;
+      transform: translate(-50%, -50%); transition: background 0.3s; will-change: transform;
     }
-
     .c-ring {
-      width: 40px;
-      height: 40px;
-      border: 1px solid var(--text-mute);
-      border-radius: 50%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 99999;
+      width: 40px; height: 40px; border: 1px solid var(--text-mute); border-radius: 50%;
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 99999;
       transform: translate(-50%, -50%);
       transition: width 0.3s var(--ease), height 0.3s var(--ease), border-color 0.3s, background 0.3s;
       will-change: transform;
     }
-
     .c-ring.expand {
-      width: 60px;
-      height: 60px;
-      border-color: transparent;
-      background: var(--highlight);
-      backdrop-filter: blur(4px);
+      width: 60px; height: 60px; border-color: transparent;
+      background: var(--highlight); backdrop-filter: blur(4px);
     }
 
-    /* Scroll Progress */
     #scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 2px;
-      background: var(--text-main);
-      width: 0%;
-      z-index: 99999;
-      transition: width 0.1s linear;
+      position: fixed; top: 0; left: 0; height: 2px; background: var(--text-main);
+      width: 0%; z-index: 99999; transition: width 0.1s linear;
     }
 
-    /* Main Window Frame matching index.html */
     .window-frame {
-      width: 96vw;
-      max-width: 1440px;
-      background: var(--bg-main);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
+      width: 96vw; max-width: 1440px; background: var(--bg-main);
+      border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
       box-shadow: 0 30px 80px rgba(0, 0, 0, 0.08);
-      display: flex;
-      flex-direction: column;
-      position: relative;
+      display: flex; flex-direction: column; position: relative;
       transition: background 0.6s var(--ease), border-color 0.6s var(--ease);
     }
 
-    /* Header */
     .window-header {
-      height: 58px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 2rem;
-      background: var(--bg-glass);
-      backdrop-filter: blur(16px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      height: 58px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; background: var(--bg-glass); backdrop-filter: blur(16px);
+      position: sticky; top: 0; z-index: 100;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-    }
-
-    .dots {
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-    }
-
-    .dot:nth-child(3) {
-      background: var(--border);
-    }
+    .header-left { display: flex; align-items: center; gap: 1.2rem; }
+    .dots { display: flex; gap: 0.5rem; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid var(--border); }
+    .dot:nth-child(3) { background: var(--border); }
 
     .nav-links {
-      display: flex;
-      gap: 1.8rem;
-      align-items: center;
-      font-family: var(--ff-mono);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      font-weight: 600;
+      display: flex; gap: 1.8rem; align-items: center;
+      font-family: var(--ff-mono); font-size: 0.78rem; text-transform: uppercase; font-weight: 600;
     }
-
-    .nav-links a.reg {
-      position: relative;
-      padding-bottom: 4px;
-      color: var(--text-mute);
-      transition: color 0.3s;
-    }
-
-    .nav-links a.reg:hover,
-    .nav-links a.reg.active-page {
-      color: var(--text-main);
-    }
-
+    .nav-links a.reg { position: relative; padding-bottom: 4px; color: var(--text-mute); transition: color 0.3s; }
+    .nav-links a.reg:hover, .nav-links a.reg.active-page { color: var(--text-main); }
     .nav-links a.reg::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0%;
-      height: 1px;
-      background: var(--text-main);
-      transition: width 0.3s var(--ease);
+      content: ''; position: absolute; left: 0; bottom: 0; width: 0%; height: 1px;
+      background: var(--text-main); transition: width 0.3s var(--ease);
     }
-
-    .nav-links a.reg:hover::after,
-    .nav-links a.reg.active-page::after {
-      width: 100%;
-    }
+    .nav-links a.reg:hover::after, .nav-links a.reg.active-page::after { width: 100%; }
 
     .theme-btn-mini {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      background: var(--bg-page);
-      color: var(--text-main);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1rem;
+      width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border);
+      background: var(--bg-page); color: var(--text-main);
+      display: inline-flex; align-items: center; justify-content: center; font-size: 1rem;
       transition: transform 0.25s var(--ease), background 0.25s;
     }
-
-    .theme-btn-mini:hover {
-      transform: rotate(180deg);
-      background: var(--text-main);
-      color: var(--bg-main);
-    }
+    .theme-btn-mini:hover { transform: rotate(180deg); background: var(--text-main); color: var(--bg-main); }
 
     /* Buttons */
     .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      background: var(--accent-blue);
-      color: #FFFFFF;
-      padding: 0.95rem 1.8rem;
-      border-radius: 6px;
-      font-family: var(--ff-mono);
-      font-size: 0.82rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
+      background: var(--accent-blue); color: #FFFFFF; padding: 0.95rem 1.8rem;
+      border-radius: 6px; font-family: var(--ff-mono); font-size: 0.82rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.03em;
       box-shadow: 0 8px 22px rgba(29, 78, 216, 0.26);
       transition: transform 0.2s var(--ease), background 0.2s, box-shadow 0.2s;
     }
-
     .btn-primary:hover:not(:disabled) {
-      background: var(--accent-blue-hover);
-      transform: translateY(-3px);
+      background: var(--accent-blue-hover); transform: translateY(-3px);
       box-shadow: 0 12px 28px rgba(29, 78, 216, 0.35);
     }
-
-    .btn-primary:disabled {
-      opacity: 0.65;
-      cursor: not-allowed;
-    }
+    .btn-primary:disabled { opacity: 0.65; cursor: not-allowed; }
 
     .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.55rem;
-      border: 1px solid var(--border);
-      color: var(--text-main);
-      background: var(--bg-page);
-      padding: 0.92rem 1.6rem;
-      border-radius: 6px;
-      font-family: var(--ff-mono);
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+      border: 1px solid var(--border); color: var(--text-main); background: var(--bg-page);
+      padding: 0.92rem 1.6rem; border-radius: 6px; font-family: var(--ff-mono);
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
       transition: background 0.2s, transform 0.2s var(--ease);
     }
-
-    .btn-outline:hover {
-      background: var(--highlight);
-      transform: translateY(-3px);
-    }
+    .btn-outline:hover { background: var(--highlight); transform: translateY(-3px); }
 
     /* ================= HERO SPLIT ================= */
     .hero-split {
-      display: grid;
-      grid-template-columns: 440px 1fr;
-      min-height: 82vh;
-      border-bottom: 1px solid var(--border);
+      display: grid; grid-template-columns: 440px 1fr;
+      min-height: 82vh; border-bottom: 1px solid var(--border);
     }
-
     .hero-book-col {
-      background: var(--bg-page);
-      border-right: 1px solid var(--border);
-      padding: 4rem 2.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      position: relative;
-      overflow: hidden;
+      background: var(--bg-page); border-right: 1px solid var(--border);
+      padding: 4rem 2.5rem; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 2rem;
+      position: relative; overflow: hidden;
     }
-
-    /* Subtle Blueprint Grid inside Book Stage */
     .hero-book-col::before {
-      content: "";
-      position: absolute;
-      inset: 0;
+      content: ""; position: absolute; inset: 0;
       background-image:
         linear-gradient(to right, var(--border-dim) 1px, transparent 1px),
         linear-gradient(to bottom, var(--border-dim) 1px, transparent 1px);
-      background-size: 36px 36px;
-      opacity: 0.45;
-      pointer-events: none;
+      background-size: 36px 36px; opacity: 0.45; pointer-events: none;
     }
-
-    .book-stage {
-      position: relative;
-      z-index: 2;
-      perspective: 1100px;
-    }
-
-    .book-float {
-      animation: bookFloat 5.5s ease-in-out infinite;
-    }
-
+    .book-stage { position: relative; z-index: 2; perspective: 1100px; }
+    .book-float { animation: bookFloat 5.5s ease-in-out infinite; }
     .book-3d {
-      position: relative;
-      width: 280px;
-      aspect-ratio: 3 / 4.15;
-      border-radius: 5px 14px 14px 5px;
-      background: #111111;
-      box-shadow:
-        -14px 20px 38px rgba(0, 0, 0, 0.28),
-        -3px 0 0 #27272A,
-        0 4px 10px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      transform-style: preserve-3d;
+      position: relative; width: 280px; aspect-ratio: 3 / 4.15;
+      border-radius: 5px 14px 14px 5px; background: #111111;
+      box-shadow: -14px 20px 38px rgba(0, 0, 0, 0.28), -3px 0 0 #27272A, 0 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden; transform-style: preserve-3d;
       transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
     }
-
     .book-3d::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 15px;
+      content: ""; position: absolute; inset: 0 auto 0 0; width: 15px;
       background: linear-gradient(90deg, rgba(255,255,255,0.24), rgba(255,255,255,0.03) 60%, rgba(0,0,0,0.45));
-      z-index: 4;
-      pointer-events: none;
+      z-index: 4; pointer-events: none;
     }
-
     .book-glare {
-      position: absolute;
-      inset: 0;
-      z-index: 5;
-      pointer-events: none;
+      position: absolute; inset: 0; z-index: 5; pointer-events: none;
       background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.22), transparent 65%);
-      opacity: 0;
-      transition: opacity 0.25s ease;
+      opacity: 0; transition: opacity 0.25s ease;
     }
-
-    .book-3d:hover .book-glare {
-      opacity: 1;
-    }
-
-    .book-cover-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
+    .book-3d:hover .book-glare { opacity: 1; }
+    .book-cover-img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .book-meta-chips {
-      position: relative;
-      z-index: 2;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.6rem;
+      position: relative; z-index: 2; display: flex; flex-wrap: wrap;
+      justify-content: center; gap: 0.6rem;
     }
-
     .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      border: 1px solid var(--border-dim);
-      padding: 0.42rem 0.85rem;
-      border-radius: 100px;
-      font-family: var(--ff-mono);
-      font-size: 0.7rem;
-      font-weight: 700;
-      background: var(--bg-main);
-      color: var(--text-mute);
-      text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      border: 1px solid var(--border-dim); padding: 0.42rem 0.85rem;
+      border-radius: 100px; font-family: var(--ff-mono); font-size: 0.7rem;
+      font-weight: 700; background: var(--bg-main); color: var(--text-mute); text-transform: uppercase;
     }
 
     .hero-copy-col {
-      padding: 4.5rem 5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding: 4.2rem 4.8rem; display: flex; flex-direction: column; justify-content: center;
     }
-
     .live-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-family: var(--ff-mono);
-      font-size: 0.76rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--text-mute);
-      margin-bottom: 1.3rem;
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      font-family: var(--ff-mono); font-size: 0.76rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-mute); margin-bottom: 1.1rem;
     }
-
     .pulse-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--live-green);
-      border-radius: 50%;
-      box-shadow: 0 0 10px var(--live-green);
-      animation: blink 2s infinite;
-      flex-shrink: 0;
+      width: 8px; height: 8px; background: var(--live-green); border-radius: 50%;
+      box-shadow: 0 0 10px var(--live-green); animation: blink 2s infinite; flex-shrink: 0;
     }
 
+    /* ========== [UPDATED] SEO-FRIENDLY HERO H1 & SUBTITLE ========== */
     .hero-title {
       font-family: var(--ff-head);
-      font-size: clamp(2.8rem, 4.6vw, 4.4rem);
-      font-weight: 800;
-      line-height: 1.04;
-      letter-spacing: -0.035em;
-      margin-bottom: 1rem;
+      font-size: clamp(2.4rem, 4vw, 3.65rem);
+      font-weight: 800; line-height: 1.07; letter-spacing: -0.035em; margin-bottom: 1rem;
     }
+    .hero-title span { color: var(--accent-blue); }
 
     .hero-subtitle {
-      font-size: 1.2rem;
-      color: var(--text-mute);
-      line-height: 1.6;
-      max-width: 600px;
-      margin-bottom: 2rem;
+      font-size: 1.12rem; color: var(--text-mute); line-height: 1.6;
+      max-width: 630px; margin-bottom: 1.6rem;
     }
 
-    .feature-checks {
-      display: grid;
-      gap: 0.85rem;
-      margin-bottom: 2.2rem;
-      max-width: 600px;
+    /* ========== [NEW] TRUST & COMPATIBILITY STRIP ========== */
+    .trust-strip {
+      display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 1.8rem;
+    }
+    .trust-pill {
+      background: var(--bg-page); border: 1px solid var(--border-dim);
+      padding: 0.38rem 0.75rem; border-radius: 6px;
+      font-family: var(--ff-mono); font-size: 0.71rem; font-weight: 600; color: var(--text-main);
     }
 
+    .feature-checks { display: grid; gap: 0.8rem; margin-bottom: 2rem; max-width: 620px; }
     .feature-checks li {
-      list-style: none;
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      font-size: 0.96rem;
-      color: var(--text-main);
-      line-height: 1.55;
+      list-style: none; display: flex; align-items: flex-start; gap: 0.75rem;
+      font-size: 0.95rem; color: var(--text-main); line-height: 1.55;
     }
+    .feature-checks i { margin-top: 0.28rem; color: var(--accent-blue); font-size: 0.9rem; }
 
-    .feature-checks i {
-      margin-top: 0.28rem;
-      color: var(--accent-blue);
-      font-size: 0.9rem;
-    }
-
+    /* ========== [UPDATED] STRIKETHROUGH PRICE ANCHOR BANNER ========== */
     .price-banner {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      margin-bottom: 1.6rem;
-      padding: 1rem 1.3rem;
-      background: var(--bg-page);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      width: fit-content;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.95rem;
+      margin-bottom: 1.6rem; padding: 1rem 1.35rem;
+      background: var(--bg-page); border: 1px solid var(--border);
+      border-radius: 8px; width: fit-content;
     }
-
+    .price-old {
+      font-family: var(--ff-head); font-size: 1.55rem; font-weight: 700;
+      color: var(--text-mute); text-decoration: line-through;
+      text-decoration-color: #ef4444; text-decoration-thickness: 2.5px;
+    }
     .price-val {
-      font-family: var(--ff-head);
-      font-size: 2.3rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
+      font-family: var(--ff-head); font-size: 2.45rem; font-weight: 800;
+      letter-spacing: -0.03em; line-height: 1;
     }
-
+    .discount-pill {
+      background: var(--sale-green-bg); color: var(--sale-green-text);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      padding: 0.3rem 0.65rem; border-radius: 5px;
+      font-family: var(--ff-mono); font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
     .price-desc {
-      font-family: var(--ff-mono);
-      font-size: 0.75rem;
-      color: var(--text-mute);
-      text-transform: uppercase;
+      font-family: var(--ff-mono); font-size: 0.74rem; color: var(--text-mute);
+      text-transform: uppercase; border-left: 1px solid var(--border-dim); padding-left: 0.9rem;
     }
 
-    .hero-cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1.1rem;
-    }
-
+    .hero-cta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.1rem; }
     .security-caption {
-      font-family: var(--ff-mono);
-      font-size: 0.72rem;
-      color: var(--text-mute);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+      font-family: var(--ff-mono); font-size: 0.72rem; color: var(--text-mute);
+      display: flex; align-items: center; gap: 0.5rem;
     }
 
     /* ================= SECTIONS ================= */
-    .section {
-      padding: 5.5rem 5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
+    .section { padding: 5.2rem 4.8rem; border-bottom: 1px solid var(--border); }
     .sec-eyebrow {
-      font-family: var(--ff-mono);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-mute);
-      margin-bottom: 0.7rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
+      font-family: var(--ff-mono); font-size: 0.75rem; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--text-mute); margin-bottom: 0.7rem;
+      font-weight: 700; display: flex; align-items: center; gap: 0.6rem;
     }
-
-    .sec-eyebrow::before {
-      content: '';
-      width: 20px;
-      height: 1px;
-      background: var(--text-mute);
-    }
-
+    .sec-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--text-mute); }
     .sec-title {
-      font-family: var(--ff-head);
-      font-size: clamp(2rem, 3.6vw, 2.8rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 2.5rem;
+      font-family: var(--ff-head); font-size: clamp(1.95rem, 3.5vw, 2.75rem);
+      font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem;
+    }
+    .sec-lead {
+      font-size: 1.05rem; color: var(--text-mute); max-width: 720px;
+      line-height: 1.65; margin-bottom: 2.5rem;
+    }
+
+    /* ========== [NEW] PROBLEM-SOLUTION & BEFORE/AFTER STYLES ========== */
+    .problem-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-bottom: 3rem;
+    }
+    .prob-card {
+      background: var(--bg-page); border: 1px solid var(--border-dim);
+      border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.65rem;
+      transition: transform 0.25s var(--ease), border-color 0.25s;
+    }
+    .prob-card:hover { transform: translateY(-4px); border-color: var(--text-main); }
+    .prob-tag {
+      font-family: var(--ff-mono); font-size: 0.68rem; font-weight: 700;
+      text-transform: uppercase; color: #ef4444;
+    }
+    .prob-card h3 { font-family: var(--ff-head); font-size: 1.15rem; font-weight: 700; }
+    .prob-card p { font-size: 0.88rem; color: var(--text-mute); line-height: 1.55; }
+    .prob-fix {
+      margin-top: auto; padding-top: 0.7rem; border-top: 1px dashed var(--border-dim);
+      font-family: var(--ff-mono); font-size: 0.73rem; font-weight: 700; color: var(--accent-blue);
+    }
+
+    .compare-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem;
+    }
+    .compare-box {
+      border-radius: 10px; padding: 1.8rem; border: 1px solid var(--border-dim); background: var(--bg-page);
+    }
+    .compare-box.good {
+      border: 1.5px solid var(--accent-blue); background: var(--bg-main);
+    }
+    .compare-label {
+      font-family: var(--ff-mono); font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; margin-bottom: 0.8rem; display: inline-block;
+      padding: 0.25rem 0.6rem; border-radius: 4px;
+    }
+    .compare-label.bad { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+    .compare-label.good { background: var(--sale-green-bg); color: var(--sale-green-text); }
+    .compare-quote {
+      font-size: 0.92rem; line-height: 1.65; color: var(--text-main); font-style: italic;
     }
 
     /* ================= INTERACTIVE BUNDLE INSPECTOR ================= */
-    .inspector-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-
+    .inspector-tabs { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem; }
     .tab-btn {
-      padding: 0.75rem 1.35rem;
-      border-radius: 6px;
-      border: 1px solid var(--border-dim);
-      background: var(--bg-page);
-      color: var(--text-mute);
-      font-family: var(--ff-mono);
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      transition: all 0.22s var(--ease);
+      padding: 0.75rem 1.35rem; border-radius: 6px; border: 1px solid var(--border-dim);
+      background: var(--bg-page); color: var(--text-mute); font-family: var(--ff-mono);
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 0.55rem; transition: all 0.22s var(--ease);
     }
-
-    .tab-btn:hover {
-      border-color: var(--text-main);
-      color: var(--text-main);
-    }
-
-    .tab-btn.active {
-      background: var(--text-main);
-      color: var(--bg-main);
-      border-color: var(--text-main);
-    }
+    .tab-btn:hover { border-color: var(--text-main); color: var(--text-main); }
+    .tab-btn.active { background: var(--text-main); color: var(--bg-main); border-color: var(--text-main); }
 
     .inspector-panel {
-      background: var(--bg-page);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 2.5rem;
-      display: none;
-      animation: fadePanel 0.35s var(--ease);
+      background: var(--bg-page); border: 1px solid var(--border); border-radius: 10px;
+      padding: 2.5rem; display: none; animation: fadePanel 0.35s var(--ease);
     }
-
-    .inspector-panel.active {
-      display: block;
-    }
-
-    .panel-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 2.5rem;
-      align-items: start;
-    }
-
-    .chapter-list {
-      display: grid;
-      gap: 0.85rem;
-    }
-
+    .inspector-panel.active { display: block; }
+    .panel-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: 2.5rem; align-items: start; }
+    .chapter-list { display: grid; gap: 0.75rem; }
     .chapter-row {
-      background: var(--bg-main);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      padding: 1rem 1.2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      transition: transform 0.2s var(--ease), border-color 0.2s;
+      background: var(--bg-main); border: 1px solid var(--border-dim); border-radius: 8px;
+      padding: 0.95rem 1.15rem; display: flex; justify-content: space-between;
+      align-items: center; gap: 1rem; transition: transform 0.2s var(--ease), border-color 0.2s;
     }
+    .chapter-row:hover { transform: translateX(5px); border-color: var(--text-main); }
 
-    .chapter-row:hover {
-      transform: translateX(5px);
-      border-color: var(--text-main);
+    /* Sample prompt switcher inside Tab 2 */
+    .sample-switcher { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem; }
+    .sample-pill {
+      padding: 0.42rem 0.8rem; border-radius: 5px; border: 1px solid var(--border-dim);
+      background: var(--bg-main); font-family: var(--ff-mono); font-size: 0.71rem; font-weight: 700;
+      color: var(--text-mute);
+    }
+    .sample-pill.active {
+      border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(29, 78, 216, 0.08);
     }
 
     .prompt-code-box {
-      background: var(--bg-main);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      padding: 1.25rem;
-      font-family: var(--ff-mono);
-      font-size: 0.8rem;
-      line-height: 1.65;
-      color: var(--text-main);
-      white-space: pre-wrap;
-      margin-bottom: 1rem;
+      background: var(--bg-main); border: 1px solid var(--border-dim); border-radius: 8px;
+      padding: 1.25rem; font-family: var(--ff-mono); font-size: 0.79rem;
+      line-height: 1.65; color: var(--text-main); white-space: pre-wrap; margin-bottom: 1rem;
     }
 
     .mini-excel-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-family: var(--ff-mono);
-      font-size: 0.76rem;
-      background: var(--bg-main);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      overflow: hidden;
+      width: 100%; border-collapse: collapse; font-family: var(--ff-mono); font-size: 0.76rem;
+      background: var(--bg-main); border: 1px solid var(--border-dim); border-radius: 8px; overflow: hidden;
     }
-
-    .mini-excel-table th {
-      background: var(--text-main);
-      color: var(--bg-main);
-      padding: 0.7rem 0.9rem;
-      text-align: left;
-    }
-
-    .mini-excel-table td {
-      padding: 0.7rem 0.9rem;
-      border-bottom: 1px solid var(--border-dim);
-    }
-
-    /* ================= INTERACTIVE ROI CALCULATOR ================= */
-    .calc-box {
-      background: var(--bg-page);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 2.5rem;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .slider-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .slider-head {
-      display: flex;
-      justify-content: space-between;
-      font-family: var(--ff-mono);
-      font-size: 0.8rem;
-      font-weight: 700;
-      margin-bottom: 0.55rem;
-    }
-
-    input[type="range"] {
-      width: 100%;
-      accent-color: var(--accent-blue);
-      height: 6px;
-      border-radius: 999px;
-      background: var(--border-dim);
-      outline: none;
-    }
-
-    .calc-output {
-      background: var(--bg-main);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 2rem;
-      display: grid;
-      gap: 1.2rem;
-    }
-
-    .metric-big {
-      font-family: var(--ff-head);
-      font-size: 2.8rem;
-      font-weight: 800;
-      line-height: 1;
-      color: var(--accent-blue);
-    }
-
-    .metric-label {
-      font-family: var(--ff-mono);
-      font-size: 0.74rem;
-      text-transform: uppercase;
-      color: var(--text-mute);
-      margin-top: 0.3rem;
-    }
+    .mini-excel-table th { background: var(--text-main); color: var(--bg-main); padding: 0.7rem 0.9rem; text-align: left; }
+    .mini-excel-table td { padding: 0.7rem 0.9rem; border-bottom: 1px solid var(--border-dim); }
 
     /* ================= WORKFLOW & FAQ ================= */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.8rem;
-    }
-
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
     .card {
-      border: 1px solid var(--border);
-      padding: 2rem;
-      background: var(--bg-page);
-      border-radius: 8px;
-      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background 0.3s;
-      position: relative;
-      overflow: hidden;
+      border: 1px solid var(--border); padding: 2rem; background: var(--bg-page);
+      border-radius: 8px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), background 0.3s;
+      position: relative; overflow: hidden;
     }
-
     .card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: var(--text-main);
-      transform: scaleX(0);
-      transform-origin: left;
+      content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px;
+      background: var(--text-main); transform: scaleX(0); transform-origin: left;
       transition: transform 0.35s var(--ease);
     }
-
-    .card:hover {
-      transform: translateY(-6px);
-      background: var(--bg-main);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
-    }
-
-    .card:hover::after {
-      transform: scaleX(1);
-    }
-
+    .card:hover { transform: translateY(-6px); background: var(--bg-main); box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08); }
+    .card:hover::after { transform: scaleX(1); }
     .card-num {
-      font-family: var(--ff-mono);
-      font-size: 0.72rem;
-      color: var(--text-mute);
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-      display: block;
+      font-family: var(--ff-mono); font-size: 0.72rem; color: var(--text-mute);
+      font-weight: 700; text-transform: uppercase; margin-bottom: 0.8rem; display: block;
     }
+    .card h3 { font-family: var(--ff-head); font-size: 1.35rem; font-weight: 700; margin-bottom: 0.7rem; }
+    .card p { font-size: 0.94rem; color: var(--text-mute); line-height: 1.6; }
 
-    .card h3 {
-      font-family: var(--ff-head);
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin-bottom: 0.7rem;
-    }
-
-    .card p {
-      font-size: 0.94rem;
-      color: var(--text-mute);
-      line-height: 1.6;
-    }
-
-    .faq-list {
-      display: grid;
-      gap: 0.85rem;
-      max-width: 820px;
-    }
-
+    .faq-list { display: grid; gap: 0.85rem; max-width: 840px; }
     .faq-item {
-      background: var(--bg-page);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      overflow: hidden;
-      transition: border-color 0.25s;
+      background: var(--bg-page); border: 1px solid var(--border-dim);
+      border-radius: 8px; overflow: hidden; transition: border-color 0.25s;
     }
-
-    .faq-item.open {
-      border-color: var(--text-main);
-    }
-
+    .faq-item.open { border-color: var(--text-main); }
     .faq-btn {
-      width: 100%;
-      padding: 1.2rem 1.4rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      text-align: left;
-      font-family: var(--ff-head);
-      font-size: 1.08rem;
-      font-weight: 700;
-      color: var(--text-main);
+      width: 100%; padding: 1.2rem 1.4rem; display: flex; align-items: center;
+      justify-content: space-between; gap: 1rem; text-align: left;
+      font-family: var(--ff-head); font-size: 1.08rem; font-weight: 700; color: var(--text-main);
     }
+    .faq-plus { font-family: var(--ff-mono); font-size: 1.2rem; transition: transform 0.25s ease; }
+    .faq-item.open .faq-plus { transform: rotate(45deg); }
+    .faq-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.28s ease; }
+    .faq-item.open .faq-panel { grid-template-rows: 1fr; }
+    .faq-panel-inner { overflow: hidden; }
+    .faq-panel-inner p { padding: 0 1.4rem 1.25rem; font-size: 0.94rem; color: var(--text-mute); line-height: 1.65; }
 
-    .faq-plus {
-      font-family: var(--ff-mono);
-      font-size: 1.2rem;
-      transition: transform 0.25s ease;
+    /* ========== [NEW] STICKY BOTTOM CONVERSION BAR ========== */
+    .sticky-buy-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 9990;
+      background: var(--bg-glass); backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border); padding: 0.75rem 2rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      transform: translateY(100%); transition: transform 0.35s var(--ease);
     }
-
-    .faq-item.open .faq-plus {
-      transform: rotate(45deg);
-    }
-
-    .faq-panel {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 0.28s ease;
-    }
-
-    .faq-item.open .faq-panel {
-      grid-template-rows: 1fr;
-    }
-
-    .faq-panel-inner {
-      overflow: hidden;
-    }
-
-    .faq-panel-inner p {
-      padding: 0 1.4rem 1.25rem;
-      font-size: 0.94rem;
-      color: var(--text-mute);
-      line-height: 1.65;
-    }
+    .sticky-buy-bar.visible { transform: translateY(0); }
+    .sticky-info { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; }
+    .sticky-title { font-family: var(--ff-head); font-weight: 800; font-size: 1rem; }
+    .sticky-price-wrap { display: flex; align-items: center; gap: 0.5rem; font-family: var(--ff-mono); }
 
     /* ================= FOOTER ================= */
     .footer-bar {
-      padding: 2rem 5rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      font-family: var(--ff-mono);
-      font-size: 0.74rem;
-      color: var(--text-mute);
-      background: var(--bg-main);
+      padding: 2rem 4.8rem; display: flex; flex-wrap: wrap; align-items: center;
+      justify-content: space-between; gap: 1rem; font-family: var(--ff-mono);
+      font-size: 0.74rem; color: var(--text-mute); background: var(--bg-main);
     }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1.4rem;
-    }
-
-    .footer-link {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      color: var(--text-main);
-    }
-
+    .footer-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1.4rem; }
+    .footer-link { text-decoration: underline; text-underline-offset: 3px; color: var(--text-main); }
     .ledger-trigger {
-      border: 1px solid var(--border-dim);
-      background: var(--bg-page);
-      padding: 0.45rem 0.9rem;
-      border-radius: 5px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      transition: border-color 0.2s;
+      border: 1px solid var(--border-dim); background: var(--bg-page);
+      padding: 0.45rem 0.9rem; border-radius: 5px; font-size: 0.72rem;
+      font-weight: 700; text-transform: uppercase; transition: border-color 0.2s;
     }
-
-    .ledger-trigger:hover {
-      border-color: var(--text-main);
-    }
+    .ledger-trigger:hover { border-color: var(--text-main); }
 
     /* ================= MODALS ================= */
     .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      z-index: 99990;
-      background: rgba(0, 0, 0, 0.58);
-      backdrop-filter: blur(6px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.2rem;
-      opacity: 0;
-      visibility: hidden;
+      position: fixed; inset: 0; z-index: 99990; background: rgba(0, 0, 0, 0.58);
+      backdrop-filter: blur(6px); display: flex; align-items: center; justify-content: center;
+      padding: 1.2rem; opacity: 0; visibility: hidden;
       transition: opacity 0.25s var(--ease), visibility 0.25s;
     }
-
-    .modal-backdrop.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
+    .modal-backdrop.active { opacity: 1; visibility: visible; }
     .modal-box {
-      width: 100%;
-      max-width: 490px;
-      max-height: 90vh;
-      overflow-y: auto;
-      background: var(--bg-main);
-      color: var(--text-main);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
-      transform: translateY(18px) scale(0.97);
-      transition: transform 0.28s var(--ease);
+      width: 100%; max-width: 490px; max-height: 90vh; overflow-y: auto;
+      background: var(--bg-main); color: var(--text-main); border: 1px solid var(--border);
+      border-radius: 12px; box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+      transform: translateY(18px) scale(0.97); transition: transform 0.28s var(--ease);
     }
-
-    .modal-backdrop.active .modal-box {
-      transform: translateY(0) scale(1);
-    }
-
-    .modal-box.wide {
-      max-width: 920px;
-    }
-
+    .modal-backdrop.active .modal-box { transform: translateY(0) scale(1); }
+    .modal-box.wide { max-width: 920px; }
     .modal-head {
-      padding: 1.2rem 1.5rem;
-      border-bottom: 1px solid var(--border-dim);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 1.2rem 1.5rem; border-bottom: 1px solid var(--border-dim);
+      display: flex; align-items: center; justify-content: space-between;
     }
-
-    .modal-head h2 {
-      font-family: var(--ff-head);
-      font-size: 1.25rem;
-      font-weight: 800;
-    }
-
+    .modal-head h2 { font-family: var(--ff-head); font-size: 1.25rem; font-weight: 800; }
     .close-btn {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      border: 1px solid var(--border-dim);
-      background: var(--bg-page);
-      font-size: 1.1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.2s, background 0.2s;
+      width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border-dim);
+      background: var(--bg-page); font-size: 1.1rem; display: inline-flex;
+      align-items: center; justify-content: center; transition: transform 0.2s, background 0.2s;
     }
-
-    .close-btn:hover {
-      transform: rotate(90deg);
-      background: var(--text-main);
-      color: var(--bg-main);
-    }
-
-    .modal-body {
-      padding: 1.5rem;
-    }
-
+    .close-btn:hover { transform: rotate(90deg); background: var(--text-main); color: var(--bg-main); }
+    .modal-body { padding: 1.5rem; }
     .summary-strip {
-      background: var(--bg-page);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      padding: 0.85rem 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.1rem;
-      font-size: 0.92rem;
+      background: var(--bg-page); border: 1px solid var(--border-dim); border-radius: 8px;
+      padding: 0.85rem 1.1rem; display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: 1.1rem; font-size: 0.92rem;
     }
-
-    .form-group {
-      margin-bottom: 0.95rem;
-    }
-
+    .form-group { margin-bottom: 0.95rem; }
     .form-group label {
-      display: block;
-      font-family: var(--ff-mono);
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: var(--text-mute);
-      margin-bottom: 0.35rem;
+      display: block; font-family: var(--ff-mono); font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.35rem;
     }
-
     .form-input {
-      width: 100%;
-      padding: 0.75rem 0.9rem;
-      border: 1px solid var(--border-dim);
-      border-radius: 7px;
-      font-size: 0.92rem;
-      color: var(--text-main);
-      background: var(--bg-page);
-      outline: none;
-      transition: border-color 0.2s;
+      width: 100%; padding: 0.75rem 0.9rem; border: 1px solid var(--border-dim);
+      border-radius: 7px; font-size: 0.92rem; color: var(--text-main);
+      background: var(--bg-page); outline: none; transition: border-color 0.2s;
     }
-
-    .form-input:focus {
-      border-color: var(--accent-blue);
-    }
-
-    .field-msg {
-      font-size: 0.78rem;
-      margin-top: 0.3rem;
-      color: #ef4444;
-      display: none;
-    }
-
+    .form-input:focus { border-color: var(--accent-blue); }
+    .field-msg { font-size: 0.78rem; margin-top: 0.3rem; color: #ef4444; display: none; }
     .typo-banner {
-      display: none;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.5rem;
-      margin-top: 0.4rem;
-      padding: 0.5rem 0.75rem;
-      border-radius: 6px;
-      background: rgba(245, 158, 11, 0.14);
-      border: 1px solid #f59e0b;
-      font-size: 0.78rem;
+      display: none; align-items: center; justify-content: space-between; gap: 0.5rem;
+      margin-top: 0.4rem; padding: 0.5rem 0.75rem; border-radius: 6px;
+      background: rgba(245, 158, 11, 0.14); border: 1px solid #f59e0b; font-size: 0.78rem;
     }
-
     .fix-typo-btn {
-      background: var(--text-main);
-      color: var(--bg-main);
-      border-radius: 4px;
-      padding: 0.25rem 0.6rem;
-      font-family: var(--ff-mono);
-      font-size: 0.7rem;
-      font-weight: 700;
+      background: var(--text-main); color: var(--bg-main); border-radius: 4px;
+      padding: 0.25rem 0.6rem; font-family: var(--ff-mono); font-size: 0.7rem; font-weight: 700;
     }
-
     .gateway-note {
-      background: var(--bg-page);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      padding: 0.8rem 1rem;
-      font-size: 0.82rem;
-      color: var(--text-mute);
-      margin-bottom: 1.1rem;
-      line-height: 1.5;
+      background: var(--bg-page); border: 1px solid var(--border-dim); border-radius: 8px;
+      padding: 0.8rem 1rem; font-size: 0.82rem; color: var(--text-mute);
+      margin-bottom: 1.1rem; line-height: 1.5;
     }
-
     .alert-box {
-      display: none;
-      padding: 0.8rem 1rem;
-      border-radius: 7px;
-      background: rgba(239, 68, 68, 0.12);
-      border: 1px solid #ef4444;
-      color: #ef4444;
-      font-size: 0.82rem;
-      margin-bottom: 1rem;
-      line-height: 1.5;
+      display: none; padding: 0.8rem 1rem; border-radius: 7px;
+      background: rgba(239, 68, 68, 0.12); border: 1px solid #ef4444;
+      color: #ef4444; font-size: 0.82rem; margin-bottom: 1rem; line-height: 1.5;
     }
 
     /* Success Receipt */
     .success-check {
-      width: 54px;
-      height: 54px;
-      margin: 0 auto 0.9rem;
-      border-radius: 50%;
-      background: rgba(34, 197, 94, 0.15);
-      color: #22c55e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
+      width: 54px; height: 54px; margin: 0 auto 0.9rem; border-radius: 50%;
+      background: rgba(34, 197, 94, 0.15); color: #22c55e;
+      display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
     }
-
     .receipt-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.1rem 0;
-      font-size: 0.84rem;
-      border: 1px solid var(--border-dim);
+      width: 100%; border-collapse: collapse; margin: 1.1rem 0;
+      font-size: 0.84rem; border: 1px solid var(--border-dim);
     }
-
-    .receipt-table td {
-      padding: 0.6rem 0.85rem;
-      border-bottom: 1px solid var(--border-dim);
-    }
-
-    .receipt-table tr:last-child td {
-      font-weight: 700;
-      background: var(--bg-page);
-    }
-
-    .receipt-table td:last-child {
-      text-align: right;
-      font-family: var(--ff-mono);
-      font-size: 0.78rem;
-    }
+    .receipt-table td { padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--border-dim); }
+    .receipt-table tr:last-child td { font-weight: 700; background: var(--bg-page); }
+    .receipt-table td:last-child { text-align: right; font-family: var(--ff-mono); font-size: 0.78rem; }
 
     /* Ledger Table */
     .ledger-stats {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      background: var(--bg-page);
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-      padding: 0.9rem 1.1rem;
-      margin-bottom: 1rem;
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 1rem; background: var(--bg-page); border: 1px solid var(--border-dim);
+      border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 1rem;
     }
-
-    .table-wrap {
-      overflow-x: auto;
-      border: 1px solid var(--border-dim);
-      border-radius: 8px;
-    }
-
-    .ledger-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.8rem;
-      text-align: left;
-    }
-
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border-dim); border-radius: 8px; }
+    .ledger-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; text-align: left; }
     .ledger-table th {
-      background: var(--bg-page);
-      padding: 0.7rem 0.85rem;
-      font-family: var(--ff-mono);
-      border-bottom: 1px solid var(--border-dim);
-      white-space: nowrap;
+      background: var(--bg-page); padding: 0.7rem 0.85rem; font-family: var(--ff-mono);
+      border-bottom: 1px solid var(--border-dim); white-space: nowrap;
     }
-
-    .ledger-table td {
-      padding: 0.7rem 0.85rem;
-      border-bottom: 1px solid var(--border-dim);
-      white-space: nowrap;
-    }
+    .ledger-table td { padding: 0.7rem 0.85rem; border-bottom: 1px solid var(--border-dim); white-space: nowrap; }
 
     /* Reveal & Keyframes */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
     .d-1 { transition-delay: 0.1s; }
     .d-2 { transition-delay: 0.2s; }
     .d-3 { transition-delay: 0.3s; }
 
-    @keyframes bookFloat {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
-    }
-
-    @keyframes fadePanel {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes bookFloat { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes fadePanel { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
     @media (max-width: 1050px) {
-      .hero-split {
-        grid-template-columns: 1fr;
-      }
-      .hero-book-col {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
-        padding: 3rem 1.5rem;
-      }
-      .hero-copy-col, .section {
-        padding: 3.5rem 2rem;
-      }
-      .panel-grid, .calc-box, .grid-3 {
-        grid-template-columns: 1fr;
-      }
-      .footer-bar {
-        padding: 1.8rem 2rem;
-      }
+      .hero-split { grid-template-columns: 1fr; }
+      .hero-book-col { border-right: none; border-bottom: 1px solid var(--border); padding: 3rem 1.5rem; }
+      .hero-copy-col, .section { padding: 3.5rem 2rem; }
+      .panel-grid, .grid-3, .problem-grid, .compare-grid { grid-template-columns: 1fr; }
+      .footer-bar { padding: 1.8rem 2rem; }
+      .price-desc { border-left: none; padding-left: 0; width: 100%; }
     }
 
     @media (max-width: 768px) {
-      body {
-        padding: 1rem;
-        cursor: auto;
-      }
-      a, button {
-        cursor: auto;
-      }
-      .c-dot, .c-ring {
-        display: none;
-      }
-      .nav-links {
-        gap: 0.9rem;
-        font-size: 0.7rem;
-      }
-      .book-3d {
-        width: 230px;
-      }
+      body { padding: 1rem; padding-bottom: 5.5rem; cursor: auto; }
+      a, button { cursor: auto; }
+      .c-dot, .c-ring { display: none; }
+      .nav-links { gap: 0.9rem; font-size: 0.7rem; }
+      .book-3d { width: 230px; }
+      .sticky-buy-bar { padding: 0.65rem 1rem; }
+      .sticky-title { display: none; }
     }
   </style>
 </head>
@@ -1265,8 +706,8 @@
       </nav>
     </header>
 
-    <!-- HERO SPLIT (3D BOOK ON LEFT, EDITORIAL COPY & CTA ON RIGHT) -->
-    <section class="hero-split">
+    <!-- HERO SPLIT -->
+    <section class="hero-split" id="heroSection">
       <div class="hero-book-col">
         <div class="book-stage">
           <div class="book-float">
@@ -1274,7 +715,7 @@
               <div class="book-glare" id="bookGlare"></div>
               <img
                 src="front-page.jpeg"
-                alt="Work on Autopilot — 2026 Digital Playbook Cover"
+                alt="Work on Autopilot — 20 Copy-Paste AI Systems for Emails, Excel & Daily Tasks"
                 class="book-cover-img"
                 onerror="this.style.display='none'; document.getElementById('fallbackCover').style.display='block';"
               />
@@ -1304,7 +745,7 @@
         </div>
 
         <div class="book-meta-chips">
-          <span class="chip"><i class="fa-solid fa-file-pdf"></i> PDF Guide</span>
+          <span class="chip"><i class="fa-solid fa-file-pdf"></i> 23-Page PDF</span>
           <span class="chip"><i class="fa-solid fa-terminal"></i> 20 Prompts (.TXT)</span>
           <span class="chip"><i class="fa-solid fa-table"></i> ROI Tracker (.XLSX)</span>
         </div>
@@ -1315,19 +756,30 @@
           <span class="pulse-dot"></span> 2026 Digital Edition · Automated Cloud Delivery
         </div>
 
-        <h1 class="hero-title reveal active d-1">Work on Autopilot</h1>
+        <!-- ========== [UPDATED] KEYWORD-RICH H1 HEADING ========== -->
+        <h1 class="hero-title reveal active d-1">
+          Work on Autopilot: <span>20 Copy-Paste AI Prompts</span> for Emails, Excel & Daily Tasks
+        </h1>
+
         <p class="hero-subtitle reveal active d-1">
-          Copy-Paste AI Systems for Emails, Spreadsheets & Daily Tasks
+          Stop rewriting robotic AI drafts. Copy, fill in the brackets, and send finished emails, error-free spreadsheet formulas, meeting action logs, and 1-page PDF briefs in seconds.
         </p>
+
+        <!-- ========== [NEW] COMPATIBILITY & OUTCOME STRIP ========== -->
+        <div class="trust-strip reveal active d-1">
+          <span class="trust-pill">✓ Works on Free ChatGPT, Gemini & Claude</span>
+          <span class="trust-pill">✓ C.R.A.F.T. Prompt Framework</span>
+          <span class="trust-pill">✓ Reclaim 12–15 Hrs/Week</span>
+        </div>
 
         <ul class="feature-checks reveal active d-2">
           <li>
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>20 Battle-Tested Prompt Systems</strong> engineered for inbox triage, messy Excel cleanup, and concise executive summaries.</span>
+            <span><strong>20 Battle-Tested Prompt Systems (18 Core + 2 Bonus)</strong> for 15-minute inbox triage, broken Excel formula debugging, and zero-hallucination PDF briefs.</span>
           </li>
           <li>
             <i class="fa-solid fa-circle-check"></i>
-            <span><strong>Automated Excel Time-Saved Tracker (.XLSX)</strong> with pre-built formulas to measure weekly hours reclaimed.</span>
+            <span><strong>Automated Excel Time-Saved Tracker (.XLSX)</strong> with pre-built formulas to measure your real weekly hours reclaimed.</span>
           </li>
           <li>
             <i class="fa-solid fa-circle-check"></i>
@@ -1335,22 +787,94 @@
           </li>
         </ul>
 
+        <!-- ========== [UPDATED] PRICE ANCHORING: ₹499 CUT -> ₹199 (60% OFF) ========== -->
         <div class="price-banner reveal active d-2">
+          <span class="price-old">₹499</span>
           <span class="price-val">₹199</span>
-          <span class="price-desc">One-Time Payment • Lifetime Access to All 3 Files</span>
+          <span class="discount-pill">60% OFF • LAUNCH OFFER</span>
+          <span class="price-desc">One-Time Payment • Lifetime Access</span>
         </div>
 
         <div class="hero-cta-row reveal active d-3">
           <button type="button" class="btn-primary magnetic-btn" id="openCheckoutBtn">
-            <i class="fa-solid fa-bolt"></i> Buy 3-File Bundle — ₹199
+            <i class="fa-solid fa-bolt"></i> Get 3-File Bundle — ₹199 (Save ₹300)
           </button>
           <a href="#inspector" class="btn-outline magnetic-btn">
-            Explore Inside Bundle ↓
+            Try Free Sample Prompts ↓
           </a>
         </div>
 
         <div class="security-caption reveal active d-3">
-          <i class="fa-solid fa-lock"></i> Secured by Razorpay (UPI, Cards & Netbanking) • Instant Email Delivery
+          <i class="fa-solid fa-lock"></i> Secured by Razorpay (UPI, Cards & Netbanking) • Instant Google Drive Unlock
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== [NEW] SECTION: PROBLEM-SOLVER SEO GRID + BEFORE vs AFTER ========== -->
+    <section class="section">
+      <div class="sec-eyebrow reveal">Why Standard AI Usage Fails at Work</div>
+      <h2 class="sec-title reveal d-1">Built for the Exact Daily Bottlenecks Slowing You Down.</h2>
+      <p class="sec-lead reveal d-1">
+        Typing one-line requests into ChatGPT produces generic filler ("I hope this email finds you well") and broken spreadsheet logic. Every prompt in this playbook uses the <strong>C.R.A.F.T. Standard</strong> so your first output lands ready to paste.
+      </p>
+
+      <div class="problem-grid reveal d-2">
+        <div class="prob-card">
+          <span class="prob-tag">Problem 01 • Robotic Tone</span>
+          <h3>"Why does ChatGPT sound fake and nothing like me?"</h3>
+          <p>Generic prompts force you to rewrite every sentence by hand.</p>
+          <div class="prob-fix">Fix: System 00B Master Role & Voice Profile</div>
+        </div>
+
+        <div class="prob-card">
+          <span class="prob-tag">Problem 02 • Inbox Overload</span>
+          <h3>"50+ unread emails, angry clients, and awkward follow-ups"</h3>
+          <p>Checking email every 10 minutes kills deep work and triggers emotional replies.</p>
+          <div class="prob-fix">Fix: Chapter 01 — 4-Tier Inbox Triage & De-Escalation</div>
+        </div>
+
+        <div class="prob-card">
+          <span class="prob-tag">Problem 03 • Broken Spreadsheets</span>
+          <h3>"Stuck on #N/A, #VALUE! errors or nested XLOOKUP formulas"</h3>
+          <p>Manually cleaning messy CSV exports and debugging formulas wastes afternoons.</p>
+          <div class="prob-fix">Fix: Chapter 03 — Plain-English Formula Builder & Debugger</div>
+        </div>
+
+        <div class="prob-card">
+          <span class="prob-tag">Problem 04 • Endless Calls</span>
+          <h3>"10-page Zoom/Teams transcripts with no clear task owners"</h3>
+          <p>Status meetings drag on while action items get lost in chat threads.</p>
+          <div class="prob-fix">Fix: Chapter 02 — 5-Min Transcript Action Extractor</div>
+        </div>
+
+        <div class="prob-card">
+          <span class="prob-tag">Problem 05 • Dense PDFs</span>
+          <h3>"30-page reports & vendor proposals before a deadline"</h3>
+          <p>Standard AI summaries hallucinate facts that aren't even in your document.</p>
+          <div class="prob-fix">Fix: Chapter 04 — Zero-Hallucination 1-Page PDF Brief</div>
+        </div>
+
+        <div class="prob-card">
+          <span class="prob-tag">Problem 06 • Repetitive Tasks</span>
+          <h3>"Reinventing the same weekly checklists and KPI updates"</h3>
+          <p>No documented SOPs means you cannot delegate or scale routine work.</p>
+          <div class="prob-fix">Fix: Chapter 05 — Instant SOP Builder & Prompt Chains</div>
+        </div>
+      </div>
+
+      <!-- Real Before vs After Proof from Page 8 of PDF -->
+      <div class="compare-grid reveal d-2">
+        <div class="compare-box">
+          <span class="compare-label bad">✕ Typical Unstructured AI Reply (Weak)</span>
+          <p class="compare-quote">
+            "Hi Sarah, sorry for the delay! We are super swamped right now and adding the extra analytics dashboard might be tough for Friday. Let me check with the team and see if we can squeeze it in, sorry again for any trouble."
+          </p>
+        </div>
+        <div class="compare-box good">
+          <span class="compare-label good">✓ Prompt 01C Output (Calm & Authoritative)</span>
+          <p class="compare-quote">
+            "Hi Sarah, thank you for flagging the analytics dashboard. To keep Friday's core launch on schedule without compromising data accuracy, we have two options: (1) ship the core report this Friday and deliver the dashboard on Tuesday at 2 PM, or (2) include the dashboard in Friday's release and move final review to Monday morning. Which works best?"
+          </p>
         </div>
       </div>
     </section>
@@ -1358,11 +882,11 @@
     <!-- INTERACTIVE 3-FILE BUNDLE INSPECTOR -->
     <section class="section" id="inspector">
       <div class="sec-eyebrow reveal">Interactive Preview</div>
-      <h2 class="sec-title reveal d-1">Inspect What's Inside the Bundle.</h2>
+      <h2 class="sec-title reveal d-1">Inspect What's Inside the 3-File Bundle.</h2>
 
       <div class="inspector-tabs reveal d-1">
         <button type="button" class="tab-btn active" data-tab="tabPdf">
-          <i class="fa-solid fa-book-open"></i> 01. PDF Playbook
+          <i class="fa-solid fa-book-open"></i> 01. 23-Page PDF Playbook
         </button>
         <button type="button" class="tab-btn" data-tab="tabTxt">
           <i class="fa-solid fa-code"></i> 02. 20-Prompt .TXT Vault
@@ -1372,123 +896,144 @@
         </button>
       </div>
 
-      <!-- TAB 1: PDF PLAYBOOK -->
+      <!-- ========== [UPDATED] TAB 1: SYNCED WITH ACTUAL 23-PAGE PDF CHAPTERS ========== -->
       <div class="inspector-panel active" id="tabPdf">
         <div class="panel-grid">
           <div>
-            <span class="card-num">FILE 01 — WORK-ON-AUTOPILOT_2026.PDF</span>
-            <h3 style="font-family:var(--ff-head); font-size:1.6rem; margin-bottom:0.8rem;">Structured Implementation Playbook</h3>
+            <span class="card-num">FILE 01 — WORK-ON-AUTOPILOT_2026-EDITION.PDF</span>
+            <h3 style="font-family:var(--ff-head); font-size:1.6rem; margin-bottom:0.8rem;">23-Page Structured Playbook</h3>
             <p style="color:var(--text-mute); line-height:1.7; margin-bottom:1.4rem;">
-              No theoretical filler. Every module breaks down a common bottleneck into exact inputs, prompt rules, and verification checks that work on free AI tools.
+              No theoretical filler. Every chapter pairs a real office bottleneck with ready-to-paste prompt templates, worked examples, and privacy guardrails.
             </p>
-            <button type="button" class="btn-primary open-checkout-trigger">Unlock Full PDF — ₹199</button>
+            <button type="button" class="btn-primary open-checkout-trigger">
+              Unlock Full Bundle — <span style="text-decoration:line-through; opacity:0.75;">₹499</span> ₹199
+            </button>
           </div>
           <div class="chapter-list">
             <div class="chapter-row">
               <div>
-                <strong>Module 01: Zero-Inbox Triage System</strong>
-                <div style="font-size:0.82rem; color:var(--text-mute);">Extract core asks, deadlines, and draft replies in 15 seconds.</div>
+                <strong>System 00: C.R.A.F.T. Prompt Standard & Time Audit</strong>
+                <div style="font-size:0.82rem; color:var(--text-mute);">Weekly Workload Audit (00A) & Master Voice Profile (00B) + 80/10/10 Rule.</div>
               </div>
-              <span class="chip">4 Systems</span>
+              <span class="chip">2 Prompts</span>
             </div>
             <div class="chapter-row">
               <div>
-                <strong>Module 02: Spreadsheet & Formula Autopilot</strong>
-                <div style="font-size:0.82rem; color:var(--text-mute);">Clean messy text columns, build XLOOKUP/INDEX formulas & summaries.</div>
+                <strong>Chapter 01: Email & Communication on Autopilot</strong>
+                <div style="font-size:0.82rem; color:var(--text-mute);">4-Tier Inbox Triage, Crisp Reply, Client De-Escalation & Polite Follow-Up.</div>
               </div>
-              <span class="chip">6 Systems</span>
+              <span class="chip">4 Prompts</span>
             </div>
             <div class="chapter-row">
               <div>
-                <strong>Module 03: Meeting & SOP Synthesizer</strong>
-                <div style="font-size:0.82rem; color:var(--text-mute);">Convert rough notes into structured action items and checklists.</div>
+                <strong>Chapter 02: Meetings, Calls & Async Updates</strong>
+                <div style="font-size:0.82rem; color:var(--text-mute);">Transcript Action Extractor, Async Status Builder & 5-Min Meeting Prep.</div>
               </div>
-              <span class="chip">5 Systems</span>
+              <span class="chip">3 Prompts</span>
             </div>
             <div class="chapter-row">
               <div>
-                <strong>Module 04: Weekly Reporting & Decision Briefs</strong>
-                <div style="font-size:0.82rem; color:var(--text-mute);">Turn raw status logs into clear executive updates.</div>
+                <strong>Chapter 03: Spreadsheets, Formulas & Data Cleanup</strong>
+                <div style="font-size:0.82rem; color:var(--text-mute);">Plain-English XLOOKUP Builder, #N/A Formula Debugger & CSV Cleaner.</div>
               </div>
-              <span class="chip">5 Systems</span>
+              <span class="chip">3 Prompts</span>
+            </div>
+            <div class="chapter-row">
+              <div>
+                <strong>Chapter 04 & 05: PDF Synthesis, SOPs & Prompt Chains</strong>
+                <div style="font-size:0.82rem; color:var(--text-mute);">Zero-Hallucination PDF Brief, Vendor Matrix, Deck Outline, Instant SOP & Bonus KPI Prompts.</div>
+              </div>
+              <span class="chip">8 Prompts</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- TAB 2: 20-PROMPT TXT VAULT -->
+      <!-- ========== [UPDATED] TAB 2: 3 LIVE TESTABLE PROMPTS (EMAIL + EXCEL + PDF) ========== -->
       <div class="inspector-panel" id="tabTxt">
         <div class="panel-grid">
           <div>
             <span class="card-num">FILE 02 — WORK-ON-AUTOPILOT_PROMPTS.TXT</span>
             <h3 style="font-family:var(--ff-head); font-size:1.6rem; margin-bottom:0.8rem;">20 Copy-Paste Prompt Templates</h3>
-            <p style="color:var(--text-mute); line-height:1.7; margin-bottom:1.4rem;">
-              Formatted in clean plain text with bracketed placeholders so you can copy, paste, and execute immediately on ChatGPT, Gemini, or Claude. Test a live prompt on the right:
+            <p style="color:var(--text-mute); line-height:1.7; margin-bottom:1.2rem;">
+              Copying from PDFs can break line formatting. Your bundle includes a clean plain-text file with all 20 prompts ready in one click. Test 3 live prompts on the right:
             </p>
             <div style="display:flex; gap:0.6rem; flex-wrap:wrap;">
               <button type="button" class="btn-outline" id="copyLiveSampleBtn">
-                <i class="fa-regular fa-copy"></i> Copy Sample Prompt
+                <i class="fa-regular fa-copy"></i> Copy Active Prompt
               </button>
-              <button type="button" class="btn-primary open-checkout-trigger">Get All 20 Prompts</button>
+              <button type="button" class="btn-primary open-checkout-trigger">Get All 20 Prompts — ₹199</button>
             </div>
           </div>
           <div>
-            <div class="prompt-code-box" id="liveSamplePromptBox">Act as my Executive Operations Assistant. Analyze the email thread below and return strictly 3 sections:
+            <div class="sample-switcher">
+              <button type="button" class="sample-pill active" data-sample="email">Prompt 01B: Crisp Email Reply</button>
+              <button type="button" class="sample-pill" data-sample="excel">Prompt 03B: Excel #N/A Debugger</button>
+              <button type="button" class="sample-pill" data-sample="pdf">Prompt 04A: Zero-Hallucination PDF</button>
+            </div>
+            <div class="prompt-code-box" id="liveSamplePromptBox">Act as a senior operations manager. Read the email thread below:
+[PASTE FULL EMAIL THREAD]
 
-1. CORE ASK (1 sentence): What exact decision or action is needed from me?
-2. DEADLINE & RISK: Mention any due dates, dependencies, or missing details.
-3. READY-TO-SEND REPLY: Write a clear, polite response under 90 words in my tone (direct, calm, professional).
+My goal for this reply is: [STATE YOUR DECISION, ANSWER, OR REQUEST IN 1 SENTENCE].
+My tone should be: [DIRECT & PROFESSIONAL / WARM & COLLABORATIVE / FIRM].
 
-[PASTE EMAIL THREAD HERE]</div>
+Complete two tasks:
+1. Summarize what the sender actually needs in 2 bullet points so I can verify I missed nothing.
+2. Draft my reply under 100 words. Open directly with the answer or decision, list any action items with owners and dates, and end without cliche sign-offs.</div>
           </div>
         </div>
       </div>
 
-      <!-- TAB 3: XLSX TIME-SAVED TRACKER -->
+      <!-- ========== [UPDATED] TAB 3: SYNCED WITH PDF PAGE 2 TABLE (12 TO 15 HRS/WK) ========== -->
       <div class="inspector-panel" id="tabXlsx">
         <div class="panel-grid">
           <div>
             <span class="card-num">FILE 03 — WORK-ON-AUTOPILOT_TRACKER.XLSX</span>
             <h3 style="font-family:var(--ff-head); font-size:1.6rem; margin-bottom:0.8rem;">Automated Time-Saved & ROI Workbook</h3>
             <p style="color:var(--text-mute); line-height:1.7; margin-bottom:1.4rem;">
-              Built with a data analyst's mindset: log your recurring tasks once, track manual minutes vs. AI-assisted minutes, and watch weekly hours saved update automatically.
+              Built with a data analyst's mindset: log your recurring tasks once during the 30-Day Rollout Plan, track manual minutes vs. AI-assisted minutes, and watch weekly hours reclaimed calculate automatically.
             </p>
-            <button type="button" class="btn-primary open-checkout-trigger">Download Bundle (.XLSX Included)</button>
+            <button type="button" class="btn-primary open-checkout-trigger">Download 3-File Bundle — ₹199</button>
           </div>
           <div style="overflow-x:auto;">
             <table class="mini-excel-table">
               <thead>
                 <tr>
-                  <th>Workflow Task</th>
-                  <th>Manual</th>
-                  <th>With AI</th>
-                  <th>Weekly Saved</th>
+                  <th>Office Workflow</th>
+                  <th>Main Prompts</th>
+                  <th>Typical Weekly Saved</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Daily Client Email Replies</td>
-                  <td>45 min</td>
-                  <td>10 min</td>
-                  <td><strong>2.9 hrs</strong></td>
+                  <td>Email & Communication</td>
+                  <td>01A, 01B, 01C, 01D</td>
+                  <td><strong>~3.75 hrs / wk</strong></td>
                 </tr>
                 <tr>
-                  <td>CSV / Excel Data Cleanup</td>
-                  <td>60 min</td>
-                  <td>12 min</td>
-                  <td><strong>2.4 hrs</strong></td>
+                  <td>Meetings & Async Updates</td>
+                  <td>02A, 02B, 02C</td>
+                  <td><strong>~3.0 hrs / wk</strong></td>
                 </tr>
                 <tr>
-                  <td>Weekly Status Summary</td>
-                  <td>40 min</td>
-                  <td>8 min</td>
-                  <td><strong>1.6 hrs</strong></td>
+                  <td>Spreadsheets & Data Cleanup</td>
+                  <td>03A, 03B, 03C, B1</td>
+                  <td><strong>~2.5 hrs / wk</strong></td>
                 </tr>
                 <tr>
-                  <td><strong>TOTAL RECLAIMED</strong></td>
-                  <td>—</td>
-                  <td>—</td>
-                  <td style="color:var(--accent-blue);"><strong>6.9 hrs / wk</strong></td>
+                  <td>Reports, Research & Decks</td>
+                  <td>04A, 04B, 04C</td>
+                  <td><strong>~2.5 hrs / wk</strong></td>
+                </tr>
+                <tr>
+                  <td>Daily Planning, SOPs & Chains</td>
+                  <td>05A, 05B, 05C, B2</td>
+                  <td><strong>~1.5 hrs / wk</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>ESTIMATED TOTAL RECLAIMED</strong></td>
+                  <td>30-Day Rollout Plan</td>
+                  <td style="color:var(--accent-blue);"><strong>12 to 15 hrs / wk</strong></td>
                 </tr>
               </tbody>
             </table>
@@ -1496,7 +1041,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- HOW DELIVERY WORKS -->
     <section class="section">
@@ -1506,7 +1050,7 @@
         <div class="card reveal d-1">
           <span class="card-num">Step 01</span>
           <h3>Verify Email & Pay ₹199</h3>
-          <p>Enter your name and verified email address, then complete payment securely via Razorpay (UPI, Cards, or Netbanking).</p>
+          <p>Enter your name and verified email address, then complete your discounted ₹199 payment securely via Razorpay (UPI, Cards, or Netbanking).</p>
         </div>
         <div class="card reveal d-2">
           <span class="card-num">Step 02</span>
@@ -1516,7 +1060,7 @@
         <div class="card reveal d-3">
           <span class="card-num">Step 03</span>
           <h3>Download All 3 Files</h3>
-          <p>Open your receipt email or private folder link to download the PDF Playbook, TXT Prompt Library, and XLSX Tracker.</p>
+          <p>Open your receipt email or private folder link to download the 23-Page PDF Playbook, TXT Prompt Library, and XLSX Tracker.</p>
         </div>
       </div>
     </section>
@@ -1540,12 +1084,25 @@
 
         <div class="faq-item reveal">
           <button type="button" class="faq-btn" aria-expanded="false">
-            <span>Do these systems work with free ChatGPT or Gemini accounts?</span>
+            <span>Do these systems work with free ChatGPT, Gemini, or Claude accounts?</span>
             <span class="faq-plus">+</span>
           </button>
           <div class="faq-panel">
             <div class="faq-panel-inner">
-              <p>Yes. Every prompt in the 20-Prompt Library is tested on free tiers of ChatGPT, Gemini, and Claude without needing paid APIs or coding skills.</p>
+              <p>Yes. Every prompt in the 20-Prompt Library is tested on free tiers of ChatGPT, Gemini, Claude, and Copilot without needing paid APIs or coding skills.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========== [NEW] HIGH-INTENT SEO FAQ FOR EXCEL & FORMULAS ========== -->
+        <div class="faq-item reveal">
+          <button type="button" class="faq-btn" aria-expanded="false">
+            <span>Will this help with broken Excel formulas (#N/A, #VALUE!) and Google Sheets?</span>
+            <span class="faq-plus">+</span>
+          </button>
+          <div class="faq-panel">
+            <div class="faq-panel-inner">
+              <p>Yes. Chapter 03 is dedicated to Excel (365/2019/2016) and Google Sheets—including a Plain-English Formula Builder (XLOOKUP, SUMIFS, INDEX-MATCH), a Broken Formula Debugger for #N/A and #VALUE! errors, and a CSV Data Cleaner.</p>
             </div>
           </div>
         </div>
@@ -1557,7 +1114,7 @@
           </button>
           <div class="faq-panel">
             <div class="faq-panel-inner">
-              <p>Yes, it is a single one-time payment of ₹199 with lifetime access to the 2026 Edition PDF, TXT Prompt Library, and Excel Tracker.</p>
+              <p>Yes, ₹199 (60% off the regular ₹499 price) is a single one-time payment with lifetime access to the 2026 Edition PDF, TXT Prompt Library, and Excel Tracker. No recurring subscriptions.</p>
             </div>
           </div>
         </div>
@@ -1587,6 +1144,21 @@
     </footer>
   </div>
 
+  <!-- ========== [NEW] STICKY BOTTOM CONVERSION BAR ========== -->
+  <div class="sticky-buy-bar" id="stickyBuyBar">
+    <div class="sticky-info">
+      <span class="sticky-title">Work on Autopilot (3-File Bundle)</span>
+      <div class="sticky-price-wrap">
+        <span style="text-decoration:line-through; color:var(--text-mute); font-size:0.9rem;">₹499</span>
+        <strong style="font-size:1.15rem; color:var(--text-main);">₹199</strong>
+        <span class="discount-pill">60% OFF</span>
+      </div>
+    </div>
+    <button type="button" class="btn-primary open-checkout-trigger" style="padding:0.65rem 1.25rem; font-size:0.76rem;">
+      Get Instant Access →
+    </button>
+  </div>
+
   <!-- MODAL 1: LIVE RAZORPAY CHECKOUT & OFFICIAL RECEIPT -->
   <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
     <div class="modal-box">
@@ -1596,9 +1168,13 @@
       </div>
       <div class="modal-body">
         <div id="checkoutFormView">
+          <!-- ========== [UPDATED] CHECKOUT SUMMARY WITH CUT PRICE ========== -->
           <div class="summary-strip">
             <span><strong>Work on Autopilot</strong> (3-File Bundle)</span>
-            <strong>₹199.00</strong>
+            <span>
+              <span style="text-decoration:line-through; color:var(--text-mute); font-size:0.84rem; margin-right:6px;">₹499</span>
+              <strong>₹199.00</strong>
+            </span>
           </div>
 
           <div class="alert-box" id="gatewayAlert"></div>
@@ -1637,7 +1213,7 @@
             </div>
 
             <button type="submit" class="btn-primary" id="submitOrderBtn" style="width:100%;">
-              Proceed to Pay ₹199 →
+              Proceed to Pay ₹199 (Save ₹300) →
             </button>
           </form>
         </div>
@@ -1793,11 +1369,16 @@
       localStorage.setItem("nr-theme", nxt);
     });
 
-    // ================= SCROLL PROGRESS & CUSTOM CURSOR =================
+    // ================= SCROLL PROGRESS, STICKY BAR & CUSTOM CURSOR =================
     const progressBar = document.getElementById("scroll-progress");
+    const stickyBar = document.getElementById("stickyBuyBar");
     window.addEventListener("scroll", () => {
       const total = document.body.scrollHeight - window.innerHeight;
       if (total > 0) progressBar.style.width = (window.scrollY / total * 100) + "%";
+      if (stickyBar) {
+        if (window.scrollY > 520) stickyBar.classList.add("visible");
+        else stickyBar.classList.remove("visible");
+      }
     }, { passive: true });
 
     const cDot = document.getElementById("cDot");
@@ -1815,7 +1396,7 @@
         cRing.style.transform = `translate3d(calc(${rx}px - 50%), calc(${ry}px - 50%), 0)`;
         requestAnimationFrame(trackRing);
       })();
-      document.querySelectorAll("a, button, .card, .tab-btn, .chapter-row").forEach(el => {
+      document.querySelectorAll("a, button, .card, .tab-btn, .chapter-row, .prob-card, .sample-pill").forEach(el => {
         el.addEventListener("mouseenter", () => cRing.classList.add("expand"));
         el.addEventListener("mouseleave", () => cRing.classList.remove("expand"));
       });
@@ -1859,7 +1440,7 @@
       });
     }
 
-    // ================= BUNDLE INSPECTOR TABS & COPY =================
+    // ================= BUNDLE INSPECTOR TABS, SAMPLE SWITCHER & COPY =================
     document.querySelectorAll(".tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
@@ -1870,6 +1451,48 @@
       });
     });
 
+    // ========== [NEW] 3 LIVE SAMPLE PROMPTS DATA ==========
+    const samplePromptsMap = {
+      email: `Act as a senior operations manager. Read the email thread below:
+[PASTE FULL EMAIL THREAD]
+
+My goal for this reply is: [STATE YOUR DECISION, ANSWER, OR REQUEST IN 1 SENTENCE].
+My tone should be: [DIRECT & PROFESSIONAL / WARM & COLLABORATIVE / FIRM].
+
+Complete two tasks:
+1. Summarize what the sender actually needs in 2 bullet points so I can verify I missed nothing.
+2. Draft my reply under 100 words. Open directly with the answer or decision, list any action items with owners and dates, and end without cliche sign-offs.`,
+      excel: `Act as a spreadsheet debugging specialist. My formula in [EXCEL / GOOGLE SHEETS] is returning an error or a wrong total.
+
+Broken Formula: [PASTE EXACT FORMULA]
+Error Displayed: [e.g., #N/A, #VALUE!, #SPILL!, or Wrong Number]
+Sample Values in Referenced Cells: [e.g., Cell A2 is "1045" with a trailing space; Col B is formatted as text]
+Expected Result: [WHAT THE ANSWER SHOULD BE]
+
+1. Explain in one plain sentence why the current formula is failing.
+2. Provide the corrected, copy-pasteable formula that handles edge cases like extra spaces or text-formatted numbers.
+3. Tell me one quick check I can run to confirm the fix worked.`,
+      pdf: `Act as an investigative research analyst. Analyze ONLY the document text provided below (or the attached file). Do not use outside knowledge or assume facts not explicitly written:
+[PASTE DOCUMENT TEXT OR ATTACH PDF]
+
+Create a 1-page executive brief with these four sections:
+1. Core Thesis in 2 Sentences.
+2. Top 5 Verified Findings (include exact numbers, dates, and cite the page/section in brackets).
+3. Hidden Risks, Caveats, or Missing Information visible in the text.
+4. Recommended Action for a [YOUR ROLE] (3 concrete next steps).`
+    };
+
+    document.querySelectorAll(".sample-pill").forEach(pill => {
+      pill.addEventListener("click", () => {
+        document.querySelectorAll(".sample-pill").forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+        const key = pill.getAttribute("data-sample");
+        if (samplePromptsMap[key]) {
+          document.getElementById("liveSamplePromptBox").textContent = samplePromptsMap[key];
+        }
+      });
+    });
+
     document.getElementById("copyLiveSampleBtn").addEventListener("click", async () => {
       const txt = document.getElementById("liveSamplePromptBox").innerText;
       const btn = document.getElementById("copyLiveSampleBtn");
@@ -1877,7 +1500,7 @@
         await navigator.clipboard.writeText(txt);
         btn.innerHTML = '<i class="fa-solid fa-check"></i> Copied!';
         setTimeout(() => {
-          btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy Sample Prompt';
+          btn.innerHTML = '<i class="fa-regular fa-copy"></i> Copy Active Prompt';
         }, 2000);
       } catch (_) {}
     });
@@ -1892,13 +1515,8 @@
     });
 
     // ================= MODAL CONTROLS =================
-    function openModal(id) {
-      document.getElementById(id).classList.add("active");
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).classList.remove("active");
-    }
+    function openModal(id) { document.getElementById(id).classList.add("active"); }
+    function closeModal(id) { document.getElementById(id).classList.remove("active"); }
 
     document.querySelectorAll("[data-close]").forEach(btn => {
       btn.addEventListener("click", () => closeModal(btn.getAttribute("data-close")));
@@ -1941,15 +1559,9 @@
 
     // ================= TYPO DETECTION =================
     const domainTypos = {
-      "gmial.com": "gmail.com",
-      "gmal.com": "gmail.com",
-      "gnail.com": "gmail.com",
-      "gamil.com": "gmail.com",
-      "gmail.co": "gmail.com",
-      "gmail.con": "gmail.com",
-      "yaho.com": "yahoo.com",
-      "yahoo.con": "yahoo.com",
-      "hotmal.com": "hotmail.com",
+      "gmial.com": "gmail.com", "gmal.com": "gmail.com", "gnail.com": "gmail.com",
+      "gamil.com": "gmail.com", "gmail.co": "gmail.com", "gmail.con": "gmail.com",
+      "yaho.com": "yahoo.com", "yahoo.con": "yahoo.com", "hotmal.com": "hotmail.com",
       "outlok.com": "outlook.com"
     };
 
@@ -2015,11 +1627,11 @@
       }
 
       const submitBtn = document.getElementById("submitOrderBtn");
+      const defaultBtnLabel = "Proceed to Pay ₹199 (Save ₹300) →";
       submitBtn.disabled = true;
       submitBtn.textContent = "Creating Secure Order...";
 
       try {
-        // Step 1: Create official Razorpay Order via Google Apps Script
         const orderRes = await fetch(APPS_SCRIPT_URL, {
           method: "POST",
           body: JSON.stringify({
@@ -2035,31 +1647,21 @@
 
         submitBtn.textContent = "Opening Razorpay...";
 
-        // Step 2: Open Razorpay Checkout with server-generated order_id
         const options = {
           key: RAZORPAY_KEY_ID,
           amount: orderData.amount,
           currency: orderData.currency || "INR",
           name: "Nitish Redhu",
-          description: "Work on Autopilot — 2026 3-File Bundle",
+          description: "Work on Autopilot — 2026 3-File Bundle (60% OFF)",
           image: "logo.jpg",
           order_id: orderData.order_id,
-          prefill: {
-            name: name,
-            email: email,
-            contact: "+91" + phone
-          },
-          notes: {
-            product: "Work on Autopilot (3-File Bundle)",
-            buyer_email: email
-          },
-          theme: {
-            color: "#1D4ED8"
-          },
+          prefill: { name: name, email: email, contact: "+91" + phone },
+          notes: { product: "Work on Autopilot (3-File Bundle)", buyer_email: email },
+          theme: { color: "#1D4ED8" },
           modal: {
             ondismiss: function () {
               submitBtn.disabled = false;
-              submitBtn.textContent = "Proceed to Pay ₹199 →";
+              submitBtn.textContent = defaultBtnLabel;
             }
           },
           handler: async function (response) {
@@ -2117,12 +1719,12 @@
               document.getElementById("recCustomer").textContent = name;
 
               submitBtn.disabled = false;
-              submitBtn.textContent = "Proceed to Pay ₹199 →";
+              submitBtn.textContent = defaultBtnLabel;
               document.getElementById("checkoutFormView").style.display = "none";
               document.getElementById("checkoutSuccessView").style.display = "block";
             } catch (verifyErr) {
               submitBtn.disabled = false;
-              submitBtn.textContent = "Proceed to Pay ₹199 →";
+              submitBtn.textContent = defaultBtnLabel;
               alertBox.innerHTML = `Payment captured (ID: <strong>${escapeHtml(response.razorpay_payment_id)}</strong>), but automatic delivery hit an issue: ${escapeHtml(verifyErr.message)}. Please email <strong>${SUPPORT_EMAIL}</strong> with your Payment ID for instant manual unlock.`;
               alertBox.style.display = "block";
             }
@@ -2132,14 +1734,14 @@
         const rzp = new window.Razorpay(options);
         rzp.on("payment.failed", function (failResp) {
           submitBtn.disabled = false;
-          submitBtn.textContent = "Proceed to Pay ₹199 →";
+          submitBtn.textContent = defaultBtnLabel;
           alertBox.textContent = "Payment failed: " + (failResp.error && failResp.error.description ? failResp.error.description : "Please try again.");
           alertBox.style.display = "block";
         });
         rzp.open();
       } catch (err) {
         submitBtn.disabled = false;
-        submitBtn.textContent = "Proceed to Pay ₹199 →";
+        submitBtn.textContent = defaultBtnLabel;
         alertBox.textContent = "Checkout Error: " + err.message;
         alertBox.style.display = "block";
       }
@@ -2148,10 +1750,7 @@
     // ================= PDF RECEIPT GENERATOR =================
     document.getElementById("downloadReceiptBtn").addEventListener("click", () => {
       if (!lastReceiptData) return;
-      if (!window.jspdf || !window.jspdf.jsPDF) {
-        window.print();
-        return;
-      }
+      if (!window.jspdf || !window.jspdf.jsPDF) { window.print(); return; }
 
       const { jsPDF } = window.jspdf;
       const doc = new jsPDF();
@@ -2179,7 +1778,7 @@
         ["Product:", "Work on Autopilot (PDF + TXT + XLSX)"],
         ["Payment Gateway:", "Razorpay"],
         ["Status:", "Paid & Verified"],
-        ["Total Paid:", "INR 199.00"]
+        ["Total Paid:", "INR 199.00 (Launch Offer - MRP INR 499.00)"]
       ];
 
       rows.forEach(([label, val]) => {
@@ -2214,10 +1813,7 @@
       return new Promise((resolve, reject) => {
         const cbName = "nrLedgerCb_" + Date.now() + "_" + Math.floor(Math.random() * 1000);
         const script = document.createElement("script");
-        const timer = setTimeout(() => {
-          cleanup();
-          reject(new Error("Request timed out"));
-        }, 12000);
+        const timer = setTimeout(() => { cleanup(); reject(new Error("Request timed out")); }, 12000);
 
         function cleanup() {
           clearTimeout(timer);
@@ -2225,16 +1821,8 @@
           if (script.parentNode) script.parentNode.removeChild(script);
         }
 
-        window[cbName] = data => {
-          cleanup();
-          resolve(data);
-        };
-
-        script.onerror = () => {
-          cleanup();
-          reject(new Error("Network error reaching Apps Script"));
-        };
-
+        window[cbName] = data => { cleanup(); resolve(data); };
+        script.onerror = () => { cleanup(); reject(new Error("Network error reaching Apps Script")); };
         script.src = `${APPS_SCRIPT_URL}?action=verify_ledger&pin=${encodeURIComponent(pin)}&callback=${cbName}`;
         document.body.appendChild(script);
       });
